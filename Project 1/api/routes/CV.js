@@ -3,18 +3,18 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
     res.status(200).json({
-        message: 'Handling GET requests to /CV'    
+        message: 'Handling GET requests to /CV'
     });
 });
 
 router.post('/', (req, res, next) => {
     const CV = {
-        CVId: req.body.productId,
-        quantity: req.body.quantity
+        name: req.body.name,
+        price: req.body.price
     }
     res.status(201).json({
         message: 'Handling POST requests to /CV',
-        CV: CV    
+        CV: CV
     });
 });
 
