@@ -3,12 +3,149 @@
   <head>
     <meta charset="utf-8">
     <title>John King React APP</title>
-    <script type="text/javascript" src="js/script.js"></script>
-  </head>
-  <body>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="lib/script.js"></script>
+    <style media="screen">
 
-    <h2>This is my CV</h2>
-    <p>html/React setup</p>
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+
+    .flip-card-back {
+      background-color: #2980b9;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    body{
+      background-color: aqua;
+    }
+    h1{
+      color: ;
+    }
+      p{
+        font-size: 16px;
+      }
+      .one{
+        background-color: green;
+        font-weight: bold;
+      }
+      .two{
+        font-weight: lighter;
+      }
+
+
+      </style>
+      </head>
+    </style>
+    <script type="text/javascript" src=""></script>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a class="active" href="#home">CV</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#api">API</a>
+    </div>
+
+
+
+    <h1 style="font-size:40px;font-weight:bold">John King</h1>
+
+    <ol> <!-- ordered list -->
+      <li>About me</li>
+      <li>Skills</li>
+      <li>CV</li>
+    </ol>
+    <ul> <!-- unordered list -->
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+
+      <!-- Tables -->
+    <table>
+      <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Skills</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>John King</td>
+        <td>None</td>
+      </tr>
+    </table>
+
+    <h2>Card</h2>
+    <div class="card">
+      <img src="img/13.png" alt="" style="width:100%">
+      <div class="container">
+        <h4><b>John King</b></h4>
+        <p>IT Student<p>
+        </div>
+      </div>
+
+    <div class="one">
+      <p>About &quot me &quot</p> <!-- & is used to display special characters --><iframe width="560" height="315" src="https://www.youtube.com/embed/1wnE4vF9CQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- to autoplay ?&autoplay=1 -->
+      <!-- <video src="Marvel.mp4" width="100%"> -->
+      <!-- <> -->
+    </div>
+
+    <div class="two">
+      <p>html <br> setup</p>  <!-- <br> tag breaks paragraph -->
+    </div>
+
+    <div class="three">
+      <a href="https://facebook.com"> Click here for Facebook</a>
+      <a href="https://www.google.com"> Click here for google</a> <!-- Anchor tag -->
+    </div>
+
+
+<p>flip</p>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/ken.jpg" alt="" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>John King</h1>
+          <p>IT student<p>
+          <p>Noob<p>
+        </div>
+      </div>
+    </div>
 
 
   </body>
