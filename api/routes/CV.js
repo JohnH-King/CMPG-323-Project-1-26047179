@@ -1,35 +1,48 @@
 const express = require('express');
 const router = express.Router();
+const mongoose = require('mongoose');
 
-router.get('/', (req, res, next) => {
+const CVItems = require('../models/CVSchema');
+var Schema = new mongoose.Schema;
+/*router.get('/', (req, res, next) => {
     res.status(200).json({
         message: 'Handling GET requests to /CV'
     });
-});
+});*/
 
 router.post('/', (req, res, next) => {
-    const CV = {
-        name: req.body.name,
-        price: req.body.price
-    }
+  const CV = {
+    //Unique id now done automatically
+    name: req.body.name,
+    price: req.body.price
+  };
+  const cvitem = new CVItems({
+    _id: new mongoose.Types.ObjectID(),
+    name: req.body.name,
+    price: req.body.price
+  });
+  cvitem.save()
+  .then(result => {
+    console.log(result);
+  })
+  .catch(err => console.log(err));
     res.status(201).json({
         message: 'Handling POST requests to /CV',
-        CV: CV
+        createdItem: cvitem
     });
 });
 
 router.get('/:CVId', (req, res, next) => {
     const id = req.params.CVId;
-    if (id === 'special'){
-        res.status(200).json({
-        message: 'You discovered the special ID',
-        id: id
-    });
-    }  else {
-        res.status(200).json({
-            message: 'You passad an ID'
+    CVItems.findbyID(id).exec().then(doc => { //then block
+        console.log(doc);
+        res.status(200).json(doc);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json({error: err});
         });
-    }
+
 });
 
 router.patch('/:CVId', (req, res, next) => {

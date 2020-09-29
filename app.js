@@ -2,10 +2,19 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 //allows the routes
 const CVRoutes = require('./api/routes/CV');
 const itemRoutes = require('./api/routes/Items');
+
+mongoose.connect("mongodb+srv://Johnk858:" + process.env.MONGO_ATLAS_PW +"@clustercv.bmapl.mongodb.net/OnlineCV?retryWrites=true&w=majority",
+{ useUnifiedTopology: true,
+  useNewUrlParser: true})
+.then(() => console.log('Database Connected'))
+.catch(err => console.log(err));
+
+
 
 app.use(morgan('dev'));//show me if i get a "get" request
 app.use(bodyParser.urlencoded({extended: false})); //true supports heavy body
