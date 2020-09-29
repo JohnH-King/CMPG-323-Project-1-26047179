@@ -7,48 +7,9 @@
     <script src="lib/script.js"></script>
     <style media="screen">
 
-    .flip-card {
-      background-color: transparent;
-      width: 300px;
-      height: 300px;
-      perspective: 1000px;
-    }
 
-    .flip-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.6s;
-      transform-style: preserve-3d;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-
-    .flip-card:hover .flip-card-inner {
-      transform: rotateY(180deg);
-    }
-
-    .flip-card-front, .flip-card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-    }
-
-    .flip-card-front {
-      background-color: #bbb;
-      color: black;
-    }
-
-    .flip-card-back {
-      background-color: #2980b9;
-      color: white;
-      transform: rotateY(180deg);
-    }
-
-    body{
-      background-color: aqua;
+    body {
+      font-family: Arial, Helvetica, sans-serif;
     }
     h1{
       color: ;
@@ -68,7 +29,7 @@
       </style>
       </head>
     </style>
-    <script type="text/javascript" src=""></script>
+    <!--<script type="text/javascript" src=""></script>-->
   </head>
 
   <body>
@@ -78,8 +39,6 @@
       <a href="#skills">Skills</a>
       <a href="#api">API</a>
     </div>
-
-
 
     <h1 style="font-size:40px;font-weight:bold">John King</h1>
 
@@ -137,12 +96,25 @@
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img src="img/ken.jpg" alt="" style="width:300px;height:300px;">
+          <img src="img/1A.jpg" alt="" style="width:300px;height:300px;">
         </div>
         <div class="flip-card-back">
           <h1>John King</h1>
           <p>IT student<p>
-          <p>Noob<p>
+          <p>Baka<p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/ken.jpg" alt="" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Zaraki Kenpachi</h1>
+          <p>11th Division Captian<p>
+          <p>Badass<p>
         </div>
       </div>
     </div>
