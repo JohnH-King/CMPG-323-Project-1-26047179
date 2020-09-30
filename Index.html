@@ -2,35 +2,47 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John King CV</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="lib/script.js"></script>
+    <style>
+    body {
+      background-color: Silver;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+</style>
     <!--<script type="text/javascript" src=""></script>-->
   </head>
 
   <body>
-    <div class="topnav">
+
+    <div class="flex-container1">
+      <div class="topnav" style="">
       <a class="active" href="#home">CV</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#api">API</a>
+      <p></p>
+    </div> <!-- line spacing -->
     </div>
-      <br><br> <!-- line spacing -->
-    <div>
-    <h1>John King </h1></.
+      <h1>John King</h1>
 
-    <ol> <!-- ordered list -->
-      <li>About me</li>
-      <li>Skills</li>
-      <li>CV</li>
-    </ol>
-    <ul> <!-- unordered list -->
-      <li>one</li>
-      <li>two</li>
-      <li>three</li>
-    </ul>
-
+    <div class="flex-container2">
+      <ol> <!-- ordered list -->
+        <li>About me</li>
+        <li>Skills</li>
+        <li>CV</li>
+      </ol>
+      <ul> <!-- unordered list -->
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+      </ul>
+    </div>
       <!-- Tables -->
+    <div class="flex-container2">
     <table>
       <tr>
         <th>S.No</th>
@@ -43,34 +55,38 @@
         <td>None</td>
       </tr>
     </table>
+  </div>
 
-    <h2>Card</h2>
+
+    <div class="flex-container2">
     <div class="card">
       <img src="img/13.png" alt="" style="width:100%">
       <div class="container">
-        <h4><b>John King</b></h4>
+        <h4><b>John King<br></b></h4>
         <p>IT Student<p>
         </div>
       </div>
+    </div>
 
-    <div class="one">
+
+    <div class="container">
       <p>About &quot me &quot</p> <!-- & is used to display special characters --><iframe width="560" height="315" src="https://www.youtube.com/embed/1wnE4vF9CQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- to autoplay ?&autoplay=1 -->
       <!-- <video src="Marvel.mp4" width="100%"> -->
       <!-- <> -->
     </div>
 
-    <div class="two">
+    <div class="container">
       <p>html <br> setup</p>  <!-- <br> tag breaks paragraph -->
     </div>
 
-    <div class="three">
+    <div class="container">
       <a href="https://facebook.com"> Click here for Facebook</a>
+      <p><br></p>
       <a href="https://www.google.com"> Click here for google</a> <!-- Anchor tag -->
     </div>
 
 
-<p>flip</p>
-
+<div class="container">
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
@@ -78,14 +94,15 @@
         </div>
         <div class="flip-card-back">
           <h1>John King</h1>
-          <p>IT student<p>
-          <p>Baka<p>
+          <p>IT student</p>
+          <p>Baka</p>
         </div>
       </div>
     </div>
+  </div>
 
 
-    <div>
+<div class="container">
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
@@ -93,12 +110,13 @@
         </div>
         <div class="flip-card-back">
           <h1>Zaraki Kenpachi</h1>
-          <p>11th Division Captian<p>
-          <p>Badass<p>
+          <p>11th Division Captian</p>
+          <p>Badass</p>
         </div>
       </div>
     </div>
   </div>
+
 
   </body>
 </html>
