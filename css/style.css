@@ -83,13 +83,13 @@ body {
 .container {
   display:flex;
   flex:1;
-  overflow-y:auto;
+  width: 100%;
   flex-direction:column;
   justify-content:center;
   align-items:center;
 }
 
-.flex-container2 { /*<!-- most used container -->>*/
+.flex-container2 { /*most used container*/
   min-width: 100px;
   max-width: 1200px;
   display: flex;
@@ -129,12 +129,14 @@ body {
 }
 
 /* Navigation bar */
-      .topnav {
-        width: 100%;
-        overflow: hidden;
-        background-color: indigo; /*<!-- #333 -->*/
-      }
-      .topnav a {
+.topnav {
+  display: flex;
+  flex:1;
+  width: 100%;
+  overflow: hidden;
+  background-color: indigo; /* #333 */
+}
+.topnav a {
         float: left;
         color: #f2f2f2;
         background-color: #00b7ff;
@@ -148,7 +150,7 @@ body {
         color: black;
       }
       .topnav a.active {
-        background-color: #0f37ff; /*-- #4CAF50 -->*/
+        background-color: #0f37ff; /* #4CAF50 */
         color: white;
       }
 
