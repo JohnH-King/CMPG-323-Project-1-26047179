@@ -13,13 +13,16 @@ var Schema = new mongoose.Schema;
 router.post('/', (req, res, next) => {
   const CV = {
     //Unique id now done automatically
+
     name: req.body.name,
-    price: req.body.price
+    email: req.body.email,
+    comments: req.body.comments
   };
   const cvitem = new CVItems({
     _id: new mongoose.Types.ObjectID(),
     name: req.body.name,
-    price: req.body.price
+    email: req.body.email,
+    comments: req.body.comments
   });
   cvitem.save()
   .then(result => {
@@ -34,7 +37,7 @@ router.post('/', (req, res, next) => {
 
 router.get('/:CVId', (req, res, next) => {
     const id = req.params.CVId;
-    CVItems.findbyID(id).exec().then(doc => { //then block
+    CVItems.findById(id).exec().then(doc => { //then block
         console.log(doc);
         res.status(200).json(doc);
       })

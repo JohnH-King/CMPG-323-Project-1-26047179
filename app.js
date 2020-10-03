@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 
 //allows the routes
 const CVRoutes = require('./api/routes/CV');
-const itemRoutes = require('./api/routes/Items');
 
 mongoose.connect("mongodb+srv://Johnk858:" + process.env.MONGO_ATLAS_PW +"@clustercv.bmapl.mongodb.net/OnlineCV?retryWrites=true&w=majority",
 { useUnifiedTopology: true,
@@ -39,7 +38,6 @@ app.use((req, res, next) => {
 
 //Request is funelled
 app.use('/CV', CVRoutes);
-app.use('/items', itemRoutes);
 
 app.use((req, res, next ) => {
     const error = new Error('Not found');
