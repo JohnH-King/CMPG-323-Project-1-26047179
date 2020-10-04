@@ -2,7 +2,7 @@
   "name": "project-1",
   "version": "1.0.0",
   "description": "Building an Online CV using Node.js Express Rest",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
@@ -12,17 +12,26 @@
     "restful",
     "api"
   ],
-  "author": "",
+  "author": "John King",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "heroku": "^7.44.0",
+    "heroku-cli": "^7.0.9",
     "js": "^0.1.0",
     "mongoose": "^5.10.5",
     "morgan": "^1.10.0",
-    "node": "^14.10.1"
+    "node": "^12.18.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "CPMG-323-Project-1-26047179"
   }
 }
