@@ -34,8 +34,6 @@ body {
 .textarea{
   height: 100%;
   width: 96%;
-  flex: 1;
-  flex-direction: column;
 }
 
 #two{
