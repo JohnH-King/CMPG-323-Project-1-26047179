@@ -23,8 +23,7 @@ body {
 }
 
 .img{
-  width: 100%;
-  min-width: 280px;
+  width: 100vw;
 }
 
 .p {
@@ -63,27 +62,18 @@ body {
   align-items:center;
 }
 
-.flex-container {
+.flex-container2 { /*most used container*/
   display:flex;
   overflow-y: auto;
   flex:1;
-  flex-wrap: wrap;
-  width: 100%;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-}
-
-.flex-container2 {
-  display:flex;
-  overflow-y: auto;
-  flex:1;
-  flex-wrap: wrap;
   min-width: 100px;
   max-width: 1200px;
-  flex-direction:row;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  position: relative;
+  margin: auto;
+  padding: 2px;
+  flex-direction: row;
+  background-color: silver;
 }
 
 .flex-container3 {

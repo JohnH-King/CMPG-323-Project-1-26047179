@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John King CV</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="lib/script.js"></script>
+    <!--<script type="text/javascript" src=""></script>-->
+
+  <!-- styles are put here to render in Heroku -->
+
+    <style>
+    {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: Silver;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-y:auto;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.one{
+  background-color: hsla(250,75%,72%,0.75);
+  font-size: 20px;
+}
+
+.img{
+  width: 100vw;
+}
+
+.p {
+  font-size: 1rem;
+}
+
+#two{
+  background-color: violet;
+  border: 3px solid gray;
+  padding: 20px;
+}
+
+#one{
+  background-color: white;
+  border: 3px solid gray;
+  padding: 20px;
+}
+
+/* call from id use # */
+
+
+/* star style*/
+.checked {
+  color: gold;
+}
+
+.card-container {
+  display:flex;
+  overflow-y: auto;
+  flex:1;
+  flex-wrap: wrap;
+  min-width: 100px;
+  max-width: 1200px;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+}
+
+.flex-container2 { /*most used container*/
+  display:flex;
+  overflow-y: auto;
+  flex:1;
+  min-width: 100px;
+  max-width: 1200px;
+  display: flex;
+  position: relative;
+  margin: auto;
+  padding: 2px;
+  flex-direction: row;
+  background-color: silver;
+}
+
+.flex-container3 {
+  display:flex;  overflow-y: auto;
+  flex:1;
+  overflow-y:auto;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width: 100%;
+  padding-left: 10px;
+  margin: 10px;
+}
+
+.flex-container4 {
+  padding: 10px;
+  display:flex;
+  flex:1;
+  overflow-y:auto;
+  justify-content:center;
+  align-items:center;
+
+}
+.flex-container2 > div {
+  background-color: #f1f1f1;
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+}
+
+/* Navigation bar */
+.topnav {
+  display: flex;
+  flex:1;
+  width: 100%;
+  overflow: hidden;
+  background-color: indigo; /* #333 */
+}
+.topnav a {
+        float: left;
+        color: #f2f2f2;
+        background-color: #00b7ff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 16px;
+      }
+      .topnav a:hover {
+        background-color: gray;
+        color: black;
+      }
+      .topnav a.active {
+        background-color: #0f37ff; /* #4CAF50 */
+        color: white;
+      }
+
+
+/* flip cards */
+      .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        margin: 0 15px 30px;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+
+      }
+
+      .flip-card:hover .flip-card-inner{
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden; /*-- default for safari browser --*/
+        display: flex;
+        justify-content: center;
+        flex-direction:column;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+      }
+
+      .flip-card-back {
+        color: red;
+        background-color: #2980b9;
+        transform:  rotateY(180deg);
+      }
+
+
+      .flip-card-front {
+        background-color: #bbb;
+      }
+
+
+
+      .flip-card-back > p {
+         margin-top: 10px;
+         line-height: 1.6;
+      }
+
+      .flip-card-back p span{
+        display: block;
+        font-size: 1rem;
+        font-weight: bolder;
+        margin: 1.25rem;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+
+      <div class="topnav">
+      <a class="active" href="#home">CV</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#api">API</a>
+      <p></p>
+    </div> <!-- line spacing -->
+
+      <h2>John King</h2>
+
+          <div id="like_button_container"></div>
+          <div class="HalfRating"></div> <!-- DOM container-->
+
+      <ol> <!-- ordered list -->
+        <li>About me</li>
+        <li>Skills</li>
+        <li>CV</li>
+      </ol>
+      <ul> <!-- unordered list -->
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+      </ul>
+      <!-- Tables -->
+    <table>
+      <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Skills</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>John King</td>
+        <td>None</td>
+      </tr>
+    </table>
+
+    <div class="container" id="two">
+      <span> HTML</span>
+      <span class="fa fa-star checked fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star-half-full" style="color:gold"></span>
+<br>
+      <span> CSS</span>
+      <span class="fa fa-star checked fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star-half-full" style="color:gold"></span>
+    </div>
+
+    <div class="flex-container" id="one">
+    <div class="card">
+      <img src="img/13.png" alt="" >
+      <div class="container">
+        <h4><b>John King<br></b></h4>
+        <div class="one"><p>IT Student<p></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flex-container" id="one">
+      <p id="two">Sample &quot video &quot</p> <!-- & is used to display special characters -->
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1wnE4vF9CQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- to autoplay ?&autoplay=1 -->
+
+      <h1>NodeJS</h1>
+      <p>During my time with NodeJs, I experimented on using MongoDB. <br> However usefull this guide was, I still needed to adapt to newer versions. NodeJS is integrated here to save comments about my CV at the moment.<br>
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WDrU305J1yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- <video src="Marvel.mp4" width="100%"> -->
+      <!-- <> -->
+    </div>
+
+    <div class="flex-container">
+      <p>html <br> setup</p>  <!-- <br> tag breaks paragraph -->
+    </div>
+
+    <div class="flex-container">
+      <a href="https://facebook.com"> Click here for Facebook</a>
+      <p><br></p>
+      <a href="https://www.google.com"> Click here for google</a> <!-- Anchor tag -->
+    </div>
+
+<br><br>
+    <div class="card-container">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/1A.jpg" alt="" style="width:100%;height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>John King</h1>
+            <p>IT student</p>
+            <p>Baka</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/ken.jpg" alt="" style="width:100%;height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Zaraki Kenpachi</h1>
+            <p>11th Division Captian</p>
+            <p>Badass</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <form class="" action="index.html" method="post">
+      Name: <input type="text" name="" value=""><br>
+      Email: <input type="email" name="" value=""><br>
+      Comments: <br><textarea name="Comments" value=""  style="max-width:96%;" cols="120" rows="4" placeholder="Questions?"></textarea><br>
+      <!-- Upload resume: <input type="file" name="" value="" accept="pdf"> -->
+    </form>
+      <button type="submit" name="button">Submit</button><br>
+      <button type="reset" name="button">Reset</button><br>
+
+  <!-- LOADING REACT -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <!-- My react Component loading -->
+    <script src="react/like_button.js"></script>
+    <script src="react/ratings.js"></script>
+  </body>
+</html>
