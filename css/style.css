@@ -31,13 +31,24 @@ body {
 }
 
 #two{
-  background-color: gold;
+  background-color: violet;
+  border: 3px solid gray;
+  padding: 20px;
+}
+
+#one{
+  background-color: white;
   border: 3px solid gray;
   padding: 20px;
 }
 
 /* call from id use # */
 
+
+/* star style*/
+.checked {
+  color: gold;
+}
 
 .card-container {
   display:flex;

@@ -13,13 +13,11 @@ var Schema = new mongoose.Schema;
 router.post('/', (req, res, next) => {
   const CV = {
     //Unique id now done automatically
-
     name: req.body.name,
     email: req.body.email,
     comments: req.body.comments
   };
   const cvitem = new CVItems({
-    _id: new mongoose.Types.ObjectID(),
     name: req.body.name,
     email: req.body.email,
     comments: req.body.comments
