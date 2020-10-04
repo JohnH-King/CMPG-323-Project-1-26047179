@@ -8,7 +8,7 @@
 body {
   background-color: Silver;
   font-family: Arial, Helvetica, sans-serif;
-  width: 98%;
+  width: 100%;
   height: 100%;
   display: flex;
   overflow-y:auto;
@@ -31,10 +31,6 @@ body {
   font-size: 1rem;
 }
 
-.textarea{
-  height: 100%;
-  width: 96%;
-}
 
 #two{
   background-color: violet;
@@ -45,7 +41,6 @@ body {
 #one{
   background-color: white;
   border: 3px solid gray;
-  padding: 20px;
 }
 
 /* call from id use # */
@@ -61,8 +56,8 @@ body {
   overflow-y: auto;
   flex:1;
   flex-wrap: wrap;
-  min-width: 100px;
-  max-width: 1200px;
+  min-width: 10%;
+  max-width: 98%;
   flex-direction:row;
   justify-content:center;
   align-items:center;
@@ -73,7 +68,7 @@ body {
   overflow-y: auto;
   flex:1;
   flex-wrap: wrap;
-  width: 100%;
+  width: 99%;
   flex-direction:column;
   justify-content:center;
   align-items:center;
@@ -92,11 +87,13 @@ body {
 
 .flex-container3 {
   display:flex;
+  overflow-y: auto;
   flex:1;
+  flex-wrap: wrap;
+  width: 95%;
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  max-width: 99%;
 }
 
 .flex-container4 {
@@ -119,7 +116,7 @@ body {
 .topnav {
   display: flex;
   flex:1;
-  width: 100%;
+  width: 98%;
   overflow: hidden;
   background-color: indigo; /* #333 */
 }
@@ -131,6 +128,7 @@ body {
         padding: 14px 16px;
         text-decoration: none;
         font-size: 16px;
+        /* width: 95%;  this make the bars flex "wrap"*/
       }
       .topnav a:hover {
         background-color: gray;

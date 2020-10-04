@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John King CV</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="lib/script.js"></script>
-    <!--<script type="text/javascript" src=""></script>-->
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John King CV</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="lib/script.js"></script>
+  <!--<script type="text/javascript" src=""></script>-->
+</head>
+
+<body>
 
 
-      <div class="topnav">
-      <a class="active" href="#home">CV</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#api">API</a>
-      <p></p>
-    </div> <!-- line spacing -->
+  <div class="topnav">
+    <a class="active" href="#home">CV</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#api">API</a>
+    <p></p>
+  </div> <!-- line spacing -->
 
-      <h2>John King</h2>
 
-          <div id="like_button_container"></div>
-          <!--<div class="HalfRating"></div>  DOM container-->
-    <div class="flex-container">
-      <ol> <!-- ordered list -->
-        <li>About me</li>
-        <li>Skills</li>
-        <li>CV</li>
-      </ol>
-      <ul> <!-- unordered list -->
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
-      </ul>
-      <!-- Tables -->
+
+  <div id="like_button_container"></div>
+  <!--<div class="HalfRating"></div>  DOM container-->
+  <div class="flex-container">
+    <ol>
+      <!-- ordered list -->
+      <li>About me</li>
+      <li>Skills</li>
+      <li>CV</li>
+    </ol>
+    <ul>
+      <!-- unordered list -->
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+    <!-- Tables -->
     <table>
       <tr>
         <th>S.No</th>
@@ -49,8 +52,8 @@
         <td>None</td>
       </tr>
     </table>
-</div>
-<div class="container" id="two">
+  </div>
+  <div class="flex-container" style="width:40%" id="two">
     <div class="flex-container2">
       <span> HTML</span>
       <span class="fa fa-star checked fa fa-star checked"></span>
@@ -59,8 +62,8 @@
       <span class="fa fa-star checked"></span>
       <span class="fa fa-star-half-full" style="color:gold"></span>
     </div>
-<br>
-<div class="flex-container2">
+    <br>
+    <div class="flex-container2">
       <span> CSS</span>
       <span class="fa fa-star checked fa fa-star checked"></span>
       <span class="fa fa-star checked"></span>
@@ -69,87 +72,99 @@
       <span class="fa fa-star-half-full" style="color:gold"></span>
     </div>
   </div>
-<br><br>
+  <br><br>
 
-    <div class="flex-container">
-      <img src="img/13.png" alt="" >
+  <div class="flex-container">
+    <img src="img/13.png" alt="">
+  </div>
+  <div class="flex-container">
+    <h4><b>John King<br></b></h4>
+    <div class="one">
+      <p>IT Student
+      <p>
     </div>
-    <div class="flex-container">
-        <h4><b>John King<br></b></h4>
-        <div class="one"><p>IT Student<p></div>
-    </div>
+  </div>
 
 
-    <div class="flex-container" id="one">
-      <p id="two">Sample &quot video &quot</p> <!-- & is used to display special characters -->
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1wnE4vF9CQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- to autoplay ?&autoplay=1 -->
-
-      <h1>NodeJS</h1>
-      <p>During my time with NodeJs, I experimented on using MongoDB. <br> However usefull this guide was, I still needed to adapt to newer versions. NodeJS is integrated here to save comments about my CV at the moment. NodeJS has weak support especially when you want to use heroku. Heroku breaks the github desktop app not allowing commits to save. The local web worked/works flawlessly when using Postman to POST and GET<br>
+  <div class="flex-container3" id="one">
+    <p id="two">Sample &quot video &quot</p> <!-- & is used to display special characters -->
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1wnE4vF9CQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- to autoplay ?&autoplay=1 -->
+  </div>
+  <div class="flex-container3" id="one">
+    <h1>NodeJS</h1>
+    <p>During my time with NodeJs, I experimented on using MongoDB. <br> However usefull this guide was, I still needed to adapt to newer versions. NodeJS is integrated here to save comments about my CV at the moment. NodeJS has weak support
+      especially when you want to use heroku. Heroku breaks the github desktop app not allowing commits to save. The local web worked/works flawlessly when using Postman to POST and GET<br>
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WDrU305J1yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <!-- <video src="Marvel.mp4" width="100%"> -->
       <!-- <> -->
-    </div>
+  </div>
 
-    <div class="flex-container">
-      <p>html <br> setup</p>  <!-- <br> tag breaks paragraph -->
-    </div>
+  <div class="flex-container">
+    <p>html <br> setup</p> <!-- <br> tag breaks paragraph -->
+  </div>
 
-    <div class="flex-container">
-      <a href="https://facebook.com"> Click here for Facebook</a>
-      <p><br></p>
-      <a href="https://www.google.com"> Click here for google</a> <!-- Anchor tag -->
-    </div>
+  <div class="flex-container">
+    <a href="https://facebook.com"> Click here for Facebook</a>
+    <p><br></p>
+    <a href="https://www.google.com"> Click here for google</a> <!-- Anchor tag -->
+  </div>
 
-<br><br>
-    <div class="card-container">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="img/1A.jpg" alt="" style="width:100%;height:100%;">
-          </div>
-          <div class="flip-card-back">
-            <h1>John King</h1>
-            <p>IT student</p>
-            <p>Baka</p>
-          </div>
+  <br><br>
+  <div class="card-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/1A.jpg" alt="" style="width:100%;height:100%;">
         </div>
-      </div>
-
-
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="img/ken.jpg" alt="" style="width:100%;height:100%;">
-          </div>
-          <div class="flip-card-back">
-            <h1>Zaraki Kenpachi</h1>
-            <p>11th Division Captian</p>
-            <p>Badass</p>
-          </div>
+        <div class="flip-card-back">
+          <h1>John King</h1>
+          <p>IT student</p>
+          <p>Baka</p>
         </div>
       </div>
     </div>
 
 
-    <form class="" action="index.html" method="post">
-      <div class="flex-container">
-        Name: <input type="text" name="" value=""><br>
-        Email: <input type="email" name="" value=""><br>
-        Comments: <br><textarea name="Comments" value=""  cols= "120";  rows="4" placeholder="Questions?"></textarea><br>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/ken.jpg" alt="" style="width:100%;height:100%;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Zaraki Kenpachi</h1>
+          <p>11th Division Captian</p>
+          <p>Badass</p>
+        </div>
+      </div>
     </div>
-      <!-- Upload resume: <input type="file" name="" value="" accept="pdf"> -->
-    </form>
+  </div>
+
+
+  <form class="" action="index.html" method="post">
+    <div class="flex-container">
+      Name: <input type="text" name="" value=""><br>
+      Email: <input type="email" name="" value=""><br>
+    </div>
+    <div>
+      Comments: <br><textarea name="Comments" value="" cols="120" rows="4" style="width:96%;"placeholder="Questions?"></textarea><br> <!-- width does not load out of css with the initial call -->
+    </div>
+
+    <!-- Upload resume: <input type="file" name="" value="" accept="pdf"> -->
+  </form>
 
   <br>
-      <button type="submit" name="button">Submit</button><br>
-      <button type="reset" name="button">Reset</button><br>
+  <div class="flex-container">
+  <button type="submit" name="button">Submit</button><br>
+  <button type="reset" name="button">Reset</button><br>
+</div>
 
   <!-- LOADING REACT -->
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
   <!-- My react Component loading -->
-    <script src="react/like_button.js"></script>
-    <script src="react/ratings.js"></script>
-  </body>
+  <script src="react/like_button.js"></script>
+  <script src="react/ratings.js"></script>
+</body>
+
 </html>
