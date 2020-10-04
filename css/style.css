@@ -79,8 +79,7 @@ body {
   overflow-y: auto;
   flex:1;
   flex-wrap: wrap;
-  min-width: 100px;
-  max-width: 1200px;
+  width: 100%;
   flex-direction:row;
   justify-content:center;
   align-items:center;
