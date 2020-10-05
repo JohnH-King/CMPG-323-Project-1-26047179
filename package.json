@@ -2,7 +2,7 @@
   "name": "project-1",
   "version": "1.0.0",
   "description": "Building an Online CV using Node.js Express Rest",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
@@ -22,7 +22,8 @@
     "js": "^0.1.0",
     "mongoose": "^5.10.5",
     "morgan": "^1.10.0",
-    "node": "^12.18.3"
+    "node": "^12.18.3",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
