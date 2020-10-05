@@ -1,4 +1,6 @@
 //
+const express = require('express');
+
 document.addEventListener('DOMContentLoaded', bindGetNewsButton);
 document.addEventListener('DOMContentLoaded', bindUserStatsButton);
 document.addEventListener('DOMContentLoaded', bindGetAchPcntButton);
@@ -25,7 +27,7 @@ app.use((req, res, next) => {
 
 function bindGetNewsButton(){
 	document.getElementById('getNewsForApp').addEventListener('click', function(event) {
-	var homeURL = "http://localhost:3000/getnews/?"
+	var homeURL = "http://localhost:6666/getnews/?"
 	var userInput = document.getElementById('getNewsInput').value;
 	var newURL = homeURL+userInput;
 	var req = new XMLHttpRequest();
@@ -46,7 +48,7 @@ function bindGetNewsButton(){
 
 function bindGetAchPcntButton(){
 	document.getElementById('getGlobalAchievementPercentagesForApp').addEventListener('click', function(event) {
-	var homeURL = "http://localhost:3000/getachievementsperc/?"
+	var homeURL = "http://localhost:6666/getachievementsperc/?"
 	var userInput = document.getElementById('getAchPcntInput').value;
 	var newURL = homeURL+userInput;
 	var req = new XMLHttpRequest();
@@ -68,7 +70,7 @@ function bindGetAchPcntButton(){
 
 function bindGetPlayerSummariesButton(){
 	document.getElementById('getPlayerSummaries').addEventListener('click', function(event) {
-	var homeURL = "http://localhost:3000/getplayersummary/?"
+	var homeURL = "http://localhost:6666/getplayersummary/?"
 	var userInput = document.getElementById('getPlSummaryInput').value;
 	var newURL = homeURL+userInput;
 	var req = new XMLHttpRequest();
@@ -89,7 +91,7 @@ function bindGetPlayerSummariesButton(){
 
 function bindGetFriendListButton(){
 	document.getElementById('getFriendList').addEventListener('click', function(event) {
-	var homeURL = "http://localhost:3000/getfriendlist/?"
+	var homeURL = "http://localhost:6666/getfriendlist/?"
 	var userInput = document.getElementById('getFriendListInput').value;
 	var newURL = homeURL+userInput;
 	var req = new XMLHttpRequest();
@@ -117,7 +119,7 @@ function bindGetFriendListButton(){
 
 function bindGetPlayerAchievementsButton(){
 	document.getElementById('GetPlayerAchievements').addEventListener('click', function(event) {
-	var homeURL = "http://localhost:3000/getplayerachievements/?"
+	var homeURL = "http://localhost:6666/getplayerachievements/?"
 	var userInput = document.getElementById('getPlayerAchievementsInput').value;
 	var newURL = homeURL+userInput;
 	var req = new XMLHttpRequest();

@@ -1,4 +1,5 @@
 // Author: Daniel Beyer
+const express = require('express');
 
 document.addEventListener('DOMContentLoaded', bindShowRecPlayedButton);
 
