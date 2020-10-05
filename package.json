@@ -23,12 +23,12 @@
     "mongoose": "^5.10.5",
     "morgan": "^1.10.0",
     "node": "^12.18.3",
-    "request": "^2.88.2"
-  },
-  "devDependencies": {
+    "request": "^2.88.2",
     "ajax": "0.0.4",
     "node-forge": "^0.10.0",
     "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
   },
   "directories": {
     "doc": "docs"

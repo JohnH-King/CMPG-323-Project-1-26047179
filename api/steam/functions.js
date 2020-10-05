@@ -139,7 +139,7 @@ function bindGetPlayerAchievementsButton(){
 
 function bindUserStatsButton(){
 	document.getElementById('getUserStatsForGame').addEventListener('click', function(event) {
-	var homeURL = "http://localhost:3000/getuserstats/?"
+	var homeURL = "http://localhost:3300/getuserstats/?"
 	var userAppID = document.getElementById('getUserStatsAppID').value;
 	var userPlayerID = document.getElementById('getUserStatsPlayerID').value;
 	var newURL = homeURL+userAppID+'='+userPlayerID;
@@ -161,7 +161,7 @@ function bindUserStatsButton(){
 
 function bindGetOwnedGamesButton(){
 	document.getElementById('GetOwnedGames').addEventListener('click', function(event) {
-	var homeURL = "http://localhost:3000/getownedgames/?"
+	var homeURL = "http://localhost:3300/getownedgames/?"
 	var userInput = document.getElementById('getOwnedGamesInput').value;
 	var newURL = homeURL+userInput;
 	var req = new XMLHttpRequest();
@@ -182,7 +182,7 @@ function bindGetOwnedGamesButton(){
 
 function bindGetRecentlyPlayedGamesButton(){
 	document.getElementById('GetRecentlyPlayedGames').addEventListener('click', function(event) {
-	var homeURL = "http://localhost:3000/getrecentlyplayed/?"
+	var homeURL = "http://localhost:3300/getrecentlyplayed/?"
 	var userInput = document.getElementById('getRecentlyPlayedGamesInput').value;
 	var newURL = homeURL+userInput;
 	var req = new XMLHttpRequest();
@@ -203,7 +203,7 @@ function bindGetRecentlyPlayedGamesButton(){
 
 function bindIsPlayingSharedGameButton(){
 	document.getElementById('IsPlayingSharedGame').addEventListener('click', function(event) {
-	var homeURL = "http://localhost:3000/isplayingshared/?"
+	var homeURL = "http://localhost:3300/isplayingshared/?"
 	var userAppID = document.getElementById('IsPlayingSharedGameAppID').value;
 	var userPlayerID = document.getElementById('IsPlayingSharedGamePlayerID').value;
 	var newURL = homeURL+userAppID+'='+userPlayerID;
@@ -225,7 +225,7 @@ function bindIsPlayingSharedGameButton(){
 
 function bindGetSchemaForGameButton(){
 	document.getElementById('GetSchemaForGame').addEventListener('click', function(event) {
-	var homeURL = "http://localhost:3000/getschema/?"
+	var homeURL = "http://localhost:3300/getschema/?"
 	var userInput = document.getElementById('GetSchemaForGameInput').value;
 	var newURL = homeURL+userInput;
 	var req = new XMLHttpRequest();
@@ -246,7 +246,7 @@ function bindGetSchemaForGameButton(){
 
 function bindGetPlayerBansButton(){
 	document.getElementById('GetPlayerBans').addEventListener('click', function(event) {
-	var homeURL = "http://localhost:3000/getbans/?"
+	var homeURL = "http://localhost:3300/getbans/?"
 	var userInput = document.getElementById('GetPlayerBansInput').value;
 	var newURL = homeURL+userInput;
 	var req = new XMLHttpRequest();
@@ -267,7 +267,7 @@ function bindGetPlayerBansButton(){
 
 function bindGetContentsNewsButton(){
 	document.getElementById('getContentsNewsForApp').addEventListener('click', function(event) {
-	var homeURL = "http://localhost:3000/getnews/?"
+	var homeURL = "http://localhost:3300/getnews/?"
 	var userInput = document.getElementById('GetContentsNewsForAppInput').value;
 	var newURL = homeURL+userInput;
 	var req = new XMLHttpRequest();

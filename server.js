@@ -1,9 +1,27 @@
 var express = require('express');
-
-var app = express();
+const http = require('http');
+const app = require('./app');
 var request = require('request');
+var fs = require('fs');
 
-app.set('port', 3000);
+// server 1
+const host = '0.0.0.0';
+const port = process.env.PORT || 5000;
+
+const server = http.createServer(function(req, res) {
+  fs.readFile('hindex.html', function(err, data) {
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.write(data);
+  res.end();
+  });
+});
+
+server.listen(port, () => {
+console.log("Listening on Port 5000");
+});
+
+//server 2
+app.set('port', 3300);
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -57,7 +75,7 @@ app.get('/getglobalstats', function(req, res) {
 });
 
 app.get('/getplayersummary', function(req, res) {
-	var qParams = ["8285034BEE279FA1E4A1F9962EC770F7"];
+	var qParams = ["VliegInDieKasVas"];
 	for (var p in req.query) {
 		qParams.push({'name':p, 'value':req.query[p]})
 	}
@@ -114,7 +132,7 @@ var url = 'http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002
 });
 
 app.get('/getownedgames', function(req, res) {
-	var qParams = [76561198072408509];
+	var qParams = ["76561198072408509"];
 	for (var p in req.query) {
 		qParams.push({'name':p, 'value':req.query[p]})
 	}
