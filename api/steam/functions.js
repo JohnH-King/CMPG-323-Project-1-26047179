@@ -12,6 +12,15 @@ document.addEventListener('DOMContentLoaded', bindGetSchemaForGameButton);
 document.addEventListener('DOMContentLoaded', bindGetPlayerBansButton);
 document.addEventListener('DOMContentLoaded', bindGetContentsNewsButton);
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+  if (req.method === 'OPTIONS') {
+    res.header('Access-Control-Allow-Methods', 'PUT, POST, PATCH, DELETE, GET');
+    return res.status(200).json({});
+  }
+  next();
+});
 
 
 function bindGetNewsButton(){
@@ -45,6 +54,7 @@ function bindGetAchPcntButton(){
 	req.addEventListener('load', function(){
 		if(req.status>= 200 && req.status<400){
 		var response = JSON.parse(req.responseText);
+		response.appnews.newsitems[0].contents;
 		console.log(response);
 		}
 			else {
@@ -84,10 +94,17 @@ function bindGetFriendListButton(){
 	var newURL = homeURL+userInput;
 	var req = new XMLHttpRequest();
 	req.open("GET", newURL, true);
-	req.addEventListener('load', function(){
-		if(req.status>= 200 && req.status<400){
-		var response = JSON.parse(req.responseText);
-		console.log(response);
+	try{
+
+		const response = await fetch(url);
+		const data = await response.json();
+		console.log(data);
+		console.log(data.response.games[0].name);
+
+		//DOM
+		document.getElementById("_id").innerHTML = '
+		<h1 class="text-center"> Games recently played</h1>
+		${data.response.games.map(gamelogoTemplate.join('')}'
 		}
 			else {
 				console.log("Error in network request: " + request.statusText);
@@ -271,6 +288,35 @@ function bindGetContentsNewsButton(){
 	event.preventDefault();
 });
 }
+/*
+function showContents(response){
+	var newsList = document.createElement('ul');
+	for (var i in response.response.games){
+		var gameName = response.response.games[p].name;
+
+		console.log(gameName);
+		var play2wks = response.response.games[p].playtime_2weeks;
+		var playForver = response.response.games[p].playtime_forever;
+
+		var newName = document.createElement('p');
+		var newPlayTime = document.createElement('p');
+		newName.textContent = gameName;
+		newPlayTime.textContent = play2wks;
+
+		document.getElementById('RecentlyOwned').appendChild(newName);
+		document.getElementById('RecentlyOwned').appendChild(newPlayTime);
+}
+const listNode2 = document.getElementById('demo2')
+function listWithForEach (employees) {
+  employees.forEach(function(employee) {
+    listNode2.innerHTML += '<li>'+employee.firstName+'</li>'
+  })
+}
+
+//using += will append content to your list, so if you call your function twice, you'll get a repeating items.
+listWithForEach(arr)
+listWithForEach(arr)
+*/
 
 function showContents(response){
 	var newsList = document.createElement('ul');

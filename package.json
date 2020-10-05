@@ -26,6 +26,7 @@
     "request": "^2.88.2"
   },
   "devDependencies": {
+    "ajax": "0.0.4",
     "node-forge": "^0.10.0",
     "nodemon": "^2.0.4"
   },

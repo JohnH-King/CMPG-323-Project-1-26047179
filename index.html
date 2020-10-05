@@ -4,13 +4,16 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>John King CV</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <!--script src="js/script.js"></script-->
-    <script src="api/steam/steamapi.js"></script>
-    <!--<script type="text/javascript" src=""></script>-->
+    <script src="api/steam/functions.js"></script>
+    <script src="api/steam/showfunctions.js"></script>
+    <!--script type="text/javascript" src=""></script-->
   </head>
 
   <body>
@@ -49,12 +52,10 @@
         <li>Skills</li>
         <li>CV</li>
       </ol>
-      <ul>
-        <!-- unordered list -->
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
-      </ul>
+      <form id="form1" runat="server">
+        <div>
+          <ul id="newsItems">
+        </div>
       <!-- Tables -->
       <table>
         <tr>
@@ -176,10 +177,14 @@
     </div>
 
 
-    <div class="flex-container">
-      <button onclick="GetNewsForApp()">Try it</button>
-    </div>
-    <script src="api/steam/function.js"></script>
+    <form>
+      <div class="form-group" id="showRecPlayed">
+        <label for="getNewsInput">ShowRecentlyPlayedGames</label>
+        <input type="text" class="form-control" id="GetRecPlayedInput" placeholder="Enter SteamID to see recently played games">
+        <button class="btn btn-primary" id="getShowRecPlayed" type="button">Submit</button>
+      </div>
+    </form>
+    <div id="RecentlyOwned"></div>
 
     <form class="" action="index.html" method="post" id="default">
       <div class="flex-container">
@@ -192,7 +197,14 @@
 
       <!-- Upload resume: <input type="file" name="" value="" accept="pdf"> -->
     </form>
-
+    <form>
+      <div class="form-group" id="showRecPlayed">
+        <label for="getNewsInput">ShowRecentlyPlayedGames</label>
+        <input type="text" class="form-control" id="GetRecPlayedInput" placeholder="Enter SteamID to see recently played games">
+        <button class="btn btn-primary" id="getShowRecPlayed" type="button">Submit</button>
+      </div>
+    </form>
+    <div id="RecentlyOwned"></div>
     <br>
     <div class="flex-container">
       <button type="submit" name="button" style="background-color:aqua">Submit</button><br>
