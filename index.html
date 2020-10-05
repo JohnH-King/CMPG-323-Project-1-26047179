@@ -206,12 +206,14 @@
 
     <form class="" action="https://mongodb-cv26047179.herokuapp.com/CV" method="post" id="default">
       <div class="flex-container">
-        Name: <input type="text" name="name" value=""><br>
-        Email: <input type="email" name="email" value=""><br>
+        Name: <input type="text" name="name" id="name"><br>
+        Email: <input type="email" name="email" id="email"><br>
       </div>
       <div>
-        Comments: <br><textarea name="Comments" value="" cols="120" rows="4" style="width:96%;" placeholder="Questions?"></textarea><br> <!-- width does not load out of css with the initial call -->
+        Comments: <br><textarea name="comments" id="comments" cols="120" rows="4" style="width:96%;" placeholder="Questions?"></textarea><br> <!-- width does not load out of css with the initial call -->
       </div>
+      <button type="submit" name="button" style="background-color:aqua">Submit</button><br>
+      <button type="reset" name="button" style="background-color:aqua">Reset</button><br>
       <!-- Upload resume: <input type="file" name="" value="" accept="pdf"> -->
     </form>
     <form action="functions.js" method="get" target="_self">
@@ -224,8 +226,7 @@
     <div id="RecentlyOwned"></div>
     <br>
     <div class="flex-container">
-      <button type="submit" name="button" style="background-color:aqua">Submit</button><br>
-      <button type="reset" name="button" style="background-color:aqua">Reset</button><br>
+
     </div>
 
     <!-- LOADING REACT -->
