@@ -1,2 +1,1 @@
-
-web:node src/start
+web:node server.js

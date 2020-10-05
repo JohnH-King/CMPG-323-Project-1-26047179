@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <!--script src="js/script.js"></script-->
+    <script src="js/script.js"></script>
     <script src="api/steam/functions.js"></script>
     <script src="api/steam/showfunctions.js"></script>
+
     <!--script type="text/javascript" src=""></script-->
   </head>
 
@@ -111,8 +113,24 @@
         <span class="fa fa-star checked fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star-half-full" style="color: orange"></span>
-        <span class="fa fa-star-half-full" style="color: orange"></span>
-        <span class="fa fa-star-half-full"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div><br>
+      <div class="flex-container2">
+        <span style="padding: 10px"> Android SDK</span>
+        <span class="fa fa-star checked fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked" style="color: orange"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div><br>
+      <div class="flex-container2">
+        <span style="padding: 10px">Javascript</span>
+        <span class="fa fa-star checked fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked" style="color: orange"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
       </div><br>
     </div>
     <br><br>
@@ -128,7 +146,7 @@
     <div class="flex-container3" id="one">
       <h1>NodeJS</h1>
       <p>During my time with NodeJs, I experimented on using MongoDB. <br> However usefull this guide was, I still needed to adapt to newer versions. NodeJS is integrated here to save comments about my CV at the moment. NodeJS has weak support
-        especially when you want to use heroku. Heroku breaks the github desktop app not allowing commits to save. The local web worked/works flawlessly when using Postman to POST and GET. Heroku deployment will be stand alone. NodeJS is used for steamAPI<br>
+        especially when you want to use heroku. Heroku breaks the github desktop app not allowing commits to save. The local web worked/works flawlessly when using Postman to POST and GET. Heroku deployment will be stand alone. NodeJS is used for steamAPI<br></p>
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WDrU305J1yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!-- <video src="Marvel.mp4" width="100%"> -->
         <!-- <> -->
@@ -177,7 +195,7 @@
     </div>
 
 
-    <form>
+    <form id="ISteamUser">
       <div class="form-group" id="showRecPlayed">
         <label for="getNewsInput">ShowRecentlyPlayedGames</label>
         <input type="text" class="form-control" id="GetRecPlayedInput" placeholder="Enter SteamID to see recently played games">
@@ -186,7 +204,7 @@
     </form>
     <div id="RecentlyOwned"></div>
 
-    <form class="" action="index.html" method="post" id="default">
+    <form class="" action="" method="post" id="default">
       <div class="flex-container">
         Name: <input type="text" name="" value=""><br>
         Email: <input type="email" name="" value=""><br>
@@ -197,7 +215,7 @@
 
       <!-- Upload resume: <input type="file" name="" value="" accept="pdf"> -->
     </form>
-    <form>
+    <form action="functions.js" method="get" target="_self">
       <div class="form-group" id="showRecPlayed">
         <label for="getNewsInput">ShowRecentlyPlayedGames</label>
         <input type="text" class="form-control" id="GetRecPlayedInput" placeholder="Enter SteamID to see recently played games">
@@ -218,6 +236,11 @@
 
     <script src="react/like_button.js"></script>
     <script src="react/ratings.js"></script>
+
+    <footer>
+      <button onclick="topFunction()" id="scrollToTopBtn">top</button>
+
+    </footer>
   </body>
 
 </html>

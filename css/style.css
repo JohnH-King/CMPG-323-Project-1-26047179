@@ -29,8 +29,8 @@ body {
   font-size: 20px;
 }
 
-.img{
-  width: 100%;
+img{
+
   min-width: 280px;
 }
 
@@ -38,6 +38,17 @@ body {
   font-size: 1rem;
 }
 
+
+#scrollToTopBtn {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px
+}
 
 #two{
   background-color: #008B8B;
@@ -60,12 +71,17 @@ body {
 /* call from id use # */
 
 
+
 /* star style*/
 .checked {
   color: orange;
 }
 
-
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
 
 .card-container {
   display:flex;

@@ -14,6 +14,56 @@ document.addEventListener('DOMContentLoaded', bindGetSchemaForGameButton);
 document.addEventListener('DOMContentLoaded', bindGetPlayerBansButton);
 document.addEventListener('DOMContentLoaded', bindGetContentsNewsButton);
 
+
+/*/////////////////////////
+
+var mybutton = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+*////////
+
+function showContents(response){
+	var newsList = document.createElement('ul');
+	for (var i in response.response.games){
+		var gameName = response.response.games[p].name;
+
+		console.log(gameName);
+		var play2wks = response.response.games[p].playtime_2weeks;
+		var playForver = response.response.games[p].playtime_forever;
+
+		var newName = document.createElement('p');
+		var newPlayTime = document.createElement('p');
+		newName.textContent = gameName;
+		newPlayTime.textContent = play2wks;
+
+		document.getElementById('RecentlyOwned').appendChild(newName);
+		document.getElementById('RecentlyOwned').appendChild(newPlayTime);
+}
+
+
+//using += will append content to your list, so if you call your function twice, you'll get a repeating items.
+listWithForEach(arr)
+listWithForEach(arr)
+
+
+/////////////////////////////////////////////////////
+
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
