@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', bindGetPlayerBansButton);
 document.addEventListener('DOMContentLoaded', bindGetContentsNewsButton);
 
 
-/*/////////////////////////
+/*////////////////////////*
 
 var mybutton = document.getElementById("scrollToTopBtn");
 
@@ -36,7 +36,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-*////////
+/
 
 function showContents(response){
 	var newsList = document.createElement('ul');
@@ -62,7 +62,7 @@ listWithForEach(arr)
 listWithForEach(arr)
 
 
-/////////////////////////////////////////////////////
+*/////////////////////////////////////////////////////
 
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
