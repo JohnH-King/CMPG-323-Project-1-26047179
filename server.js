@@ -14,7 +14,7 @@ app.use(function(req, res, next) {
 // Here gets parameters from end of URL to use in api address.  These parameters will come from submit buttons
 // on the respective sites
 app.get('/getnews', function(req, res) {
-	var qParams = ["76561198072408509"];
+	var qParams = [440];
 	for (var p in req.query) {
 		qParams.push({'name':p, 'value':req.query[p]})
 	}
@@ -28,7 +28,7 @@ app.get('/getnews', function(req, res) {
 });
 
 app.get('/getachievementsperc', function(req, res) {
-	var qParams = ["76561198072408509"];
+	var qParams = [044];
 	for (var p in req.query) {
 		qParams.push({'name':p, 'value':req.query[p]})
 	}
@@ -43,7 +43,7 @@ app.get('/getachievementsperc', function(req, res) {
 
 //Requires AppId and name of achievement
 app.get('/getglobalstats', function(req, res) {
-	var qParams = ["76561198072408509"];
+	var qParams = [];
 	for (var p in req.query) {
 		qParams.push({'name':p, 'value':req.query[p]})
 	}
@@ -57,7 +57,7 @@ app.get('/getglobalstats', function(req, res) {
 });
 
 app.get('/getplayersummary', function(req, res) {
-	var qParams = ["76561198072408509"];
+	var qParams = ["8285034BEE279FA1E4A1F9962EC770F7"];
 	for (var p in req.query) {
 		qParams.push({'name':p, 'value':req.query[p]})
 	}
