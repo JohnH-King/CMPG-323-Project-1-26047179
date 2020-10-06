@@ -35,6 +35,9 @@ body {
   border-radius: 50%;
 }
 
+.img{
+  align-items: flex-start;
+}
 
 
 .p {
@@ -153,11 +156,11 @@ footer {
   background-color: #008C8C;
 }
 
-.flex-container4 {
+.flex-container5{
   padding: 10px;
   display:flex;
   flex:1;
-  overflow-y:auto;
+
   justify-content:center;
   align-items:center;
 
