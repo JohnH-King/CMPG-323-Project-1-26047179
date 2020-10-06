@@ -12,30 +12,33 @@
 
 */
 body {
-  background-color: #000000;
+  background-color: #008B8A;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   height: 100%;
   display: flex;
+  margin: 0;
   overflow-y:auto;
-  overflow-x: auto;
+  overflow-x: hidden;
   flex-direction:column;
   justify-content: center;
-  align-items: center;
+  align-items: center;border: 3px solid gold;
 }
 
 .one{
-  background-color: hsla(250,75%,72%,0.75);
+  background-color: gold; /*  amother color convention available hsla(250,75%,72%,0.75);*/
   font-size: 20px;
+  border: none;
+  border-radius: 40%;
 }
 
 img{
     image-orientation: from-image;
-    width: 50%;
+
     float: left;
 }
 
-p {
+.p {
   font-size: 1rem;
 }
 
@@ -104,7 +107,7 @@ footer {
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  background-color: aqua;
+  background-color: lightblue;
 }
 
 .flex-container-attention {
@@ -132,6 +135,7 @@ footer {
 .flex-container3 {
   display:flex;
   overflow-y: auto;
+  overflow-x: auto;
   flex:1;
   flex-wrap: wrap;
   width: 100%;
@@ -158,6 +162,8 @@ footer {
 
 /* Navigation bar */
 .topnav {
+  position: sticky;
+  top:0px;
   display: flex;
   flex:1;
   width: 100%;
@@ -167,7 +173,7 @@ footer {
 .topnav a {
         float: left;
         color: black;
-        background-color: #A9A9A9;
+        background-color: aqua;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -179,7 +185,7 @@ footer {
         color: black;
       }
       .topnav a.active {
-        background-color: gold; /* #4CAF50 */
+        background-color: #4CAF50 ; /* #4CAF50 */
         color: black;
       }
 
