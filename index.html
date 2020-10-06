@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <iframe name="itembase" style="visibility:hidden"></iframe>
+
 
 
     <div class="topnav">
@@ -28,19 +28,22 @@
       <a href="#skills">Skills</a>
       <a href="#api">API</a>
       <p></p>
+      <div class="flex-container-attention" id="attention">
+        <b><a href="img/John_King_CV.pdf" target="_blank">Download my CV</a></b>
+        <!--embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://johnh-king.github.io/CMPG-323-Project-1-26047179/img/John_King_CV.pdf" width="500" height="375"-->
+      </div>
     </div> <!-- line spacing -->
 
     <div class="flex-container" id="about">
       <h1><a name="about">About me</h1>
-      <p>I am John King and I was born in 1996. Graduated High School in 2014. Enrolled in university from 2015.</p>
-      <img src="img/1B.jpg" alt="" height="400vw"/>
-      <img src="img/1A.jpg" alt="" height="400vw"/>
+      <p>I am John King and I was born in 1996. Graduated High School in 2014. Enrolled in university from 2015. I used to play Chess for Sedibeng. </p>
+
+      <img src="img/1A.jpg" alt=""/>
     </div>
     <div class="flex-container">
-      <h4><b>John King<br></b></h4>
+      <h4>John King<br></b></h4>
       <div class="one">
-        <p>IT Student
-        <p>
+        <p>IT Student</p>
       </div>
     </div><br><br>
 
@@ -48,33 +51,9 @@
 
     <br>
     <!--<div class="HalfRating"></div>  DOM container-->
-    <div class="flex-container" style="width:100%" id="two">
-      <ol>
-        <!-- ordered list -->
-        <li>About me</li>
-        <li>Skills</li>
-        <li>CV</li>
-      </ol>
-      <form id="form1" runat="server">
-        <div>
-          <ul id="newsItems">
-        </div>
-      <!-- Tables -->
-      <table>
-        <tr>
-          <th>S.No</th>
-          <th>Name</th>
-          <th>Skills</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>John King</td>
-          <td>None</td>
-        </tr>
-      </table>
-    </div>
+
     <br>
-    <div class="flex-container" style="width:40%" id="two">
+    <div class="flex-container" id="two">
       <h1><a name="skills">Skills</h1>
       <div class="flex-container2">
         <span style="padding: 10px"> HTML</span>
@@ -141,10 +120,8 @@
 
     <div class="flex-container3" id="one">
       <p id="two">Sample &quot video &quot</p> <!-- & is used to display special characters -->
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1wnE4vF9CQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <!-- to autoplay ?&autoplay=1 -->
-    </div>
-    <div class="flex-container3" id="one">
+
+
       <h1>NodeJS</h1>
       <p>During my time with NodeJs, I experimented on using MongoDB. <br> However useful this guide was, I still needed to adapt to newer versions. NodeJS is integrated here to save comments about my CV at the moment. NodeJS has weak support
         especially when you want to use heroku. Heroku breaks the github desktop app not allowing commits to save. I used Express REST API to create my server. The local web worked/works flawlessly when using Postman to POST and GET. Heroku deployment will be stand alone. NodeJS is used for steamAPI<br></p>
@@ -158,7 +135,7 @@
       <br>
       <a href="https://www.google.com"> Click here for google</a> <!-- Anchor tag -->
       <br><br>
-      <a href="http://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=440&count=3&maxlength=300&format=json">hi</a>
+      <a href="http://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=440&count=3&maxlength=300&format=json">A typical Steam JSON file</a>
     </div>
     <!-- Divider    -->
     <br>
@@ -196,27 +173,23 @@
     </div>
 
 
-    <form id="ISteamUser">
-      <div class="form-group" id="showRecPlayed">
-        <label for="getNewsInput">ShowRecentlyPlayedGames</label>
-        <input type="text" class="form-control" id="GetRecPlayedInput" placeholder="Enter SteamID to see recently played games">
-        <button class="btn btn-primary" id="getShowRecPlayed" type="button">Submit</button>
-      </div>
-    </form>
-    <div id="RecentlyOwned"></div>
+
+
 
     <form class="default" action="https://mongodb-cv26047179.herokuapp.com/CV" method="post" id="default" target="itembase">
       <div class="flex-container">
-        Name: <input type="text" name="name" id="name"><br>
-        Email: <input type="email" name="email" id="email"><br>
-      </div>
-      <div>
-        Comments: <br><textarea name="comments" id="comments" cols="120" rows="4" style="width:96%;" placeholder="Questions?"></textarea><br> <!-- width does not load out of css with the initial call -->
-      </div>
-      <button type="submit" name="button" style="background-color:aqua" value="Submit">Submit</button><br>
-      <button type="reset" name="button" style="background-color:aqua">Reset</button><br>
+        <b>Name:</b> <input type="text" name="name" id="name"><br>
+        <b>Email:</b> <input type="email" name="email" id="email"><br>
+
+        <b>Comments:</b> <br><textarea name="comments" id="comments" cols="120" rows="4" style="width:96%;" placeholder="Questions?"></textarea><br> <!-- width does not load out of css with the initial call -->
+
+      <button type="submit" name="button" style="background-color:aqua" value="Submit"><b>Submit</b></button><br>
+      <button type="reset" name="button" style="background-color:aqua"><b>Reset</b></button><br>
+    </div>
       <!-- Upload resume: <input type="file" name="" value="" accept="pdf"> -->
     </form>
+
+<br><br>
     <form action="functions.js" method="get" target="_self">
       <div class="form-group" id="showRecPlayed">
         <label for="getNewsInput">ShowRecentlyPlayedGames</label>
@@ -230,9 +203,7 @@
 
     </div>
 
-    <div class="flex-container">
-      <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://johnh-king.github.io/CMPG-323-Project-1-26047179/img/John_King_CV.pdf" width="500" height="375">
-    </div>
+
 
     <!-- LOADING REACT -->
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
