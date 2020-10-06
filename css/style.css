@@ -31,8 +31,9 @@ body {
 
 img{
   image-orientation: from-image;
-  min-width: 280px;
   max-width: 30%;
+  min-height: 100px;
+  max-height: 40%;
 }
 
 p {
