@@ -28,8 +28,9 @@ body {
 .one{
   background-color: gold; /*  amother color convention available hsla(250,75%,72%,0.75);*/
   font-size: 20px;
+  padding: 10px;
   border: none;
-  border-radius: 40%;
+  border-radius: 50%;
 }
 
 
@@ -65,9 +66,7 @@ body {
   background-color: white;
 }
 
-#about {
-  background-color: #008B8B;
-}
+
 /* call from id use # */
 
 
@@ -141,6 +140,18 @@ footer {
 }
 
 .flex-container4 {
+  display:flex;
+  overflow-x: auto;
+  flex:1;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background-color: #008C8C;
+}
+
+.flex-container4 {
   padding: 10px;
   display:flex;
   flex:1;
@@ -164,7 +175,8 @@ footer {
   flex:1;
   width: 100%;
   overflow: hidden;
-  background-color: silver; /* #333 */
+  background-color: green; /* #333 */
+  z-index: 1; /* this makes the sticky postition not get overlapped by something like flip tiles */
 }
 .topnav a {
         float: left;
