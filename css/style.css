@@ -30,10 +30,9 @@ body {
 }
 
 img{
+  flex:1;
   image-orientation: from-image;
-  max-width: 30%;
-  min-height: 100px;
-  max-height: 40%;
+
 }
 
 p {
