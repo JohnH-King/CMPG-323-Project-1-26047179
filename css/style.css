@@ -110,9 +110,10 @@ footer {
 .flex-container-attention {
   display:flex;
   overflow-x: auto;
-
+  flex: 1;
+  width: 100%;
   border-radius: 150px;
-  border: 3px solid red;
+
   flex-direction:column;
   float: right;
 
