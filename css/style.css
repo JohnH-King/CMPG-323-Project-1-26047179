@@ -32,11 +32,7 @@ body {
   border-radius: 40%;
 }
 
-img{
-    image-orientation: from-image;
 
-    float: left;
-}
 
 .p {
   font-size: 1rem;
