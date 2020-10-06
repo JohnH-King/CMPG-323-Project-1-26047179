@@ -31,6 +31,8 @@ body {
 
 img{
     image-orientation: from-image;
+    width: 50%;
+    float: left;
 }
 
 p {
