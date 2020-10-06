@@ -9,7 +9,7 @@
     <title>John King CV</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <!--script src="js/script.js"></script-->
     <script src="js/script.js"></script>
     <script src="api/steam/functions.js"></script>
@@ -63,57 +63,73 @@
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
-        <span class="fa fa-star-half-full" style="color: orange"></span>
+        <span class="fa fa-star-half-full" style="color: orange"></span><br>
       </div>
-      <br>
+
       <div class="flex-container2">
         <span style="padding: 10px"> CSS</span>
         <span class="fa fa-star checked fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
-        <span class="fa fa-star-half-full" style="color: orange"></span>
-      </div><br>
+        <span class="fa fa-star" ></span><br>
+      </div>
       <div class="flex-container2">
         <span style="padding: 10px"> Java</span>
         <span class="fa fa-star checked fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
-        <span class="fa fa-star-half-full" style="color: orange"></span>
-      </div><br>
+        <span class="fa fa-star-half-full" style="color: orange"></span><br>
+      </div>
       <div class="flex-container2">
         <span style="padding: 10px"> C# </span>
         <span class="fa fa-star checked fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
-        <span class="fa fa-star-half-full" style="color: orange"></span>
-      </div><br>
+        <span class="fa fa-star-half-full" style="color: orange"></span><br>
+      </div>
       <div class="flex-container2">
         <span style="padding: 10px"> Python </span>
         <span class="fa fa-star checked fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star-half-full" style="color: orange"></span>
         <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-      </div><br>
+        <span class="fa fa-star"></span><br>
+      </div>
       <div class="flex-container2">
         <span style="padding: 10px"> Android SDK</span>
         <span class="fa fa-star checked fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked" style="color: orange"></span>
         <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-      </div><br>
+        <span class="fa fa-star"></span><br>
+      </div>
       <div class="flex-container2">
         <span style="padding: 10px">Javascript</span>
         <span class="fa fa-star checked fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked" style="color: orange"></span>
         <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span><br>
+      </div>
+      <div class="flex-container2">
+        <span style="padding: 10px">Delphi</span>
+        <span class="fa fa-star checked fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
         <span class="fa fa-star"></span>
-      </div><br><br><br>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span><br>
+      </div>
+      <div class="flex-container2">
+        <span style="padding: 10px">SQL</span>
+        <span class="fa fa-star checked fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked" style="color: orange"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span><br>
+      </div>
     </div>
 
 
@@ -185,8 +201,10 @@
       <!-- Upload resume: <input type="file" name="" value="" accept="pdf"> -->
     </form>
 
+
+
 <br><br>
-    <form action="functions.js" method="get" target="_self">
+    <form action="functions.js" method="get" target="_blank">
       <div class="form-group" id="showRecPlayed">
         <label for="getNewsInput">ShowRecentlyPlayedGames</label>
         <input type="text" class="form-control" id="GetRecPlayedInput" placeholder="Enter SteamID to see recently played games">
@@ -197,15 +215,23 @@
     <br>
     <div class="flex-container">
 
+
     </div>
 
     <div class="flex-container">
       <a href="https://facebook.com"> Click here for Facebook</a>
       <br>
       <a href="https://www.google.com"> Click here for google</a> <!-- Anchor tag -->
-      <br><br>
+      <br>
       <a href="http://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=440&count=3&maxlength=300&format=json">A typical Steam JSON file</a>
     </div>
+
+
+
+    <footer>
+      <button onclick="topFunction()" id="scrollToTopBtn">top</button>
+
+    </footer>
 
     <!-- LOADING REACT -->
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
@@ -214,11 +240,7 @@
 
     <script src="react/like_button.js"></script>
     <script src="react/ratings.js"></script>
-
-    <footer>
-      <button onclick="topFunction()" id="scrollToTopBtn">top</button>
-
-    </footer>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 
 </html>
