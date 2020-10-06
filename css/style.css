@@ -30,9 +30,7 @@ body {
 }
 
 img{
-  flex:1;
-  image-orientation: from-image;
-
+    image-orientation: from-image;
 }
 
 p {
