@@ -27,6 +27,9 @@ router.post('/', (req, res, next) => {
     console.log(result);
   })
   .catch(err => console.log(err));
+
+    //doc saved
+  });
     res.status(201).json({
         message: 'Handling POST requests to /CV',
         createdItem: cvitem
