@@ -332,7 +332,8 @@ textarea{
   display: flex;
   flex:1;
   overflow: hidden;
-  background-color: green; /* #333 */
+  background-color: transparent; /* #333 */
+  width: 100%;
   z-index: 1; /* this makes the sticky postition not get overlapped by something like flip tiles */
 }
 .topnav a {
