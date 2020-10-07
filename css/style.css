@@ -273,9 +273,8 @@ footer {
   top:0px;
 
   display: flex;
-  flex:1;
-  flex-wrap: wrap;
-  overflow: hidden;
+  flex:2 2 0;
+  grid-template-columns: 60px 60px 60px 60px 60px 60px
   background-color: green; /* #333 */
   z-index: 1; /* this makes the sticky postition not get overlapped by something like flip tiles */
 }
