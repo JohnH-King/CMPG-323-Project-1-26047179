@@ -1,8 +1,8 @@
 {
-  "name": "heroku-clean-comments",
+  "name": "steamapi",
   "version": "1.0.0",
-  "description": "does MongoDB",
-  "main": "app.js",
+  "description": "does CV",
+  "main": "script.js",
   "dependencies": {
     "ajax": "0.0.4",
     "express": "^4.17.1",
@@ -22,5 +22,8 @@
     "heroku"
   ],
   "author": "John King",
-  "license": "ISC"
+  "license": "ISC",
+  "directories": {
+    "doc": "docs"
+  }
 }

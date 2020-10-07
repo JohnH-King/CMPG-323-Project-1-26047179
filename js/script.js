@@ -1,3 +1,6 @@
+const steam_api = 'http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=8285034BEE279FA1E4A1F9962EC770F7&steamid=76561198072408509&format=json&count=3';
+const proxyurl = 'https://cors-anywhere.herokuapp.com/'; //server for proxy, no need to NodeJS? !!!!
+
 //Get the button
 var mybutton = document.getElementById("scrollToTopBtn");
 
@@ -80,6 +83,41 @@ function parseResponser(json) {
   document.getElementById("explanation").innerHTML = json["explanation"];
 }
 
-window.getElementById("logo").addEventListener("click", function() {
-  nasa();
-})
+window.onload = nasa();
+//window.getElementById("logo").addEventListener("click", function() {
+//  nasa();
+//}) window.onload makes this unneeded
+
+//Steam api
+async function getGames() {
+  const response = await fetch(proxyurl + steam_api);
+  const data = await response.json();
+
+  var logoUrl1 = "http://media.steampowered.com/steamcommunity/public/images/apps/" + data.response.games[0].appid + "/" + data.response.games[0].img_logo_url + ".jpg";
+  var name1 = data.response.games[0].name;
+  var hoursPlayed1 = Math.round(data.response.games[0].playtime_forever / 60);
+
+  document.getElementById("lastPlayedUrl1").src = logoUrl1;
+  document.getElementById("lastPlayedTitle1").innerHTML = name1;
+  document.getElementById("lastPlayedHours1").innerHTML = hoursPlayed1;
+}
+getGames(); //runs it automatically
+
+
+//cors anywhere seems handy enough not to need NodeJS again ~_~
+(function() {
+  var cors_api_host = 'cors-anywhere.herokuapp.com';
+  var cors_api_url = 'https://' + cors_api_host + '/';
+  var slice = [].slice;
+  var origin = window.location.protocol + '//' + window.location.host;
+  var open = XMLHttpRequest.prototype.open;
+  XMLHttpRequest.prototype.open = function() {
+    var args = slice.call(arguments);
+    var targetOrigin = /^https?:\/\/([^\/]+)/i.exec(args[1]);
+    if (targetOrigin && targetOrigin[0].toLowerCase() !== origin &&
+      targetOrigin[1] !== cors_api_host) {
+      args[1] = cors_api_url + args[1];
+    }
+    return open.apply(this, args);
+  };
+})();
