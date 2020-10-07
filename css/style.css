@@ -228,8 +228,9 @@ textarea{
   align-items:center;
 }
 
-.flex-container3 {
-  display:flex;
+.flex-container-grid1 {
+  display:grid;
+  grid-template-columns: 50% 50%;
   overflow-y: auto;
   overflow-x: auto;
   flex:1;
@@ -238,6 +239,21 @@ textarea{
   flex-direction:column;
   justify-content:center;
   align-items:center;
+
+}
+
+.flex-container-grid2 {
+  display:grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  overflow-y: auto;
+  overflow-x: auto;
+  flex:1;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
 }
 
 .flex-container4 {

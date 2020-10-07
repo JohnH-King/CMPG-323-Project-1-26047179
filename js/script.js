@@ -77,6 +77,6 @@ function parseResponser(json) {
   document.getElementById("explanation").innerHTML= json["explanation"];
 }
 
-document.getElementById("logo").addEventListener("click", function() {
+window.getElementById("logo").addEventListener("click", function() {
   nasa();
 })

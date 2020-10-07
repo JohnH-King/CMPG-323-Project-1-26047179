@@ -21,7 +21,7 @@
   <!--script type="text/javascript" src=""></script-->
 </head>
 
-<body>
+<body onload="nasa()">
   <div class="topnav">
     <a class="active" href="#about">About</a>
     <a href="#skills">Skills</a>
@@ -29,7 +29,7 @@
     <a href="#contact">Contact</a>
     <p></p>
 
-    <a href="img/John_King_CV.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a>
+    <a href="img/John_King_CV.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i><br>Download CV</a>
     <!--embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://johnh-king.github.io/CMPG-323-Project-1-26047179/img/John_King_CV.pdf" width="500" height="375"-->
 
   </div> <!-- line spacing -->
@@ -42,18 +42,14 @@
     </div>
     <br>
   </div>
-
-  <div class="flex-container3">
-    <h1 style="padding: 10px;"><a name="about"><b>About me</b><br><br></a></h1>
-    <img src="img/2.jpg" alt="" style="width: 50%;      float: left;  padding-right: 10px;" />
-    <p>I am John King and I was born in 1996. Graduated High School in 2014. Enrolled in university from 2015. I used to play Chess for Sedibeng. My objective is:<br>
+<h1 style="padding: 10px;"><a name="about"><b>About me</b><br></a></h1>
+  <div class="flex-container-grid1">
+    <img src="img/2.jpg" alt="" style="width: 100%;      float: left;  padding-right: 10px;" />
+    <span><p>I am John King and I was born in 1996. Graduated High School in 2014. Enrolled in university from 2015. I used to play Chess for Sedibeng. My objective is:<br>
       I would like to build up experience to one day become a Senior Developer, being able to manipulate many software with a professional touch. I also have an interest in Artificial Intelligence.
     </p>
-
-
     <br>
-
-    <div style="postition=flex-end;" id="like_button_container"></div><br>
+    <div id="like_button_container"></div><br></span>
   </div>
 
   <!--<div class="HalfRating"></div>  DOM container-->
@@ -140,7 +136,7 @@
 
 
 
-  <div class="flex-container3" id="one"><br>
+  <div class="flex-container4" id="one"><br>
     <p id="two">Sample &quot video &quot</p> <!-- & is used to display special characters -->
 
 
@@ -161,17 +157,22 @@
 
 
   <br><br>
+  <div class="flex-container-grid2">
+  <p></p>
+  <p style="padding: 10px;">This api is the NASA APOD API that fetches a json string, which gives access to a .jpg, explanation, title, and copyright</p>
+  <p>This API is responsible for fetching random Chuck Norris facts</p>
+  <p></p>
+</div>
   <div class="card-container">
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <div class="card-img" id="img" alt="" style="overflow:auto;" ></div>
+          <div class="card-img" id="img" alt="" style="width:100%; height:100%; overflow:hidden;" ></div>
         </div>
         <div class="flip-card-back">
           <h1 id="title"></h1>
           <textarea id="explanation" maxlength="500"></textarea>
           <p id="copyright"></p>
-          <p>Baka</p>
         </div>
       </div>
     </div>
