@@ -43,7 +43,7 @@ body {
   border: none;
   border-radius: 50%;
 
-  animation-name: name;
+  animation-name: first;
   animation-duration: 3s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
@@ -55,11 +55,10 @@ body {
 }
 
 
-p {
+.p {
   font-size: 2vh;
+  padding: 5px;
 }
-
-
 #scrollToTopBtn {
   background-color: orange;
   border: none;
@@ -81,7 +80,7 @@ p {
   background-color: black;
   border: 3px solid ##FFF8DC;
 
-  animation-name: name;
+  animation-name: second;
   animation-duration: 3s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
@@ -94,7 +93,7 @@ p {
 
 
 /* animations */
-@keyframes name {
+@keyframes first {
   0%{
     background-color: gray;
   }
@@ -110,7 +109,24 @@ p {
   100%{
     background-color: white;
   }
+}
 
+@keyframes second { /* shades of red */
+  0%{
+    background-color: #ffffff;
+  }
+  25%{
+    background-color: #ff8080;
+  }
+  50%{
+    background-color: #ff0000;
+  }
+  75%{
+    background-color: #cc0000;
+  }
+  100%{
+    background-color: #990000;
+  }
 }
 
 
@@ -126,6 +142,7 @@ footer {
   padding: 16px;
 }
 
+/* containers for divs and more*/
 .card-container {
   display:flex;
   flex:1;
