@@ -271,8 +271,10 @@ footer {
 .topnav {
   position: sticky;
   top:0px;
+
   display: flex;
   flex:1;
+  flex-shrink:1;
   width: 100%;
   overflow: hidden;
   background-color: green; /* #333 */
