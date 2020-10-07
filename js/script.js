@@ -6,9 +6,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    mybutton.style.display = 'none';
   } else {
-    mybutton.style.display = "none";
+    mybutton.style.display = 'none';
   }
 }
 
@@ -28,3 +28,27 @@ function loadDoc() {
   xhttp.open("GET", "ajax_info.txt", true);
   xhttp.send();
 }
+
+//Chuck Norris api
+function randomFact() {
+  var xmlhttp = new XMLHttpRequest();
+  var url= "https://api.chucknorris.io/jokes/random";
+  xmlhttp.onreadystatechange= function() {
+    if (this.readyState == 4 && this.status == 200) {
+      //get json
+      var json = JSON.parse(this.responseText);
+      parseResponse(json);
+    }
+  };
+  xmlhttp.open("GET", url, true);
+  xmlhttp.send();//call api endpoint for facts
+}
+
+function parseResponse(json) {
+  //simple object with a value prop
+  document.getElementById("data").innerHTML = "<b>" + json["value"] + "</b>";
+}
+
+document.getElementById("logo").addEventListener("click", function() {
+  randomFact();
+});

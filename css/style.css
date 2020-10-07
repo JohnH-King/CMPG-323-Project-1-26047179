@@ -28,6 +28,24 @@ body {
   border: 3px solid gold;
 }
 
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+button {
+  border: 2px solid orange;
+  color: black;
+  padding: 10px 20px;
+}
+
+button:hover{
+  background-color: gray;
+  color: black;
+}
+
 .hide {
   position:absolute;
   top:-1px;
@@ -91,6 +109,20 @@ body {
   background-color: white;
 }
 
+#data {
+  width: 100%;
+  border: 1px dashed black;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+#chuck {
+  margin: 0 auto;
+}
+
 
 /* animations */
 @keyframes first {
@@ -134,12 +166,6 @@ body {
 /* star style*/
 .checked {
   color: orange;
-}
-
-footer {
-  display: flex;
-  justify-content: flex-end;
-  padding: 16px;
 }
 
 /* containers for divs and more*/
@@ -337,7 +363,7 @@ footer {
 
       .flip-card-back {
         color: red;
-        background-color: #2980b9;
+        background-color: white;
         transform:  rotateY(180deg);
       }
 
