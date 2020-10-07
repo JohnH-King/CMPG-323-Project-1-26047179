@@ -19,6 +19,10 @@
   <script src="api/steam/showfunctions.js"></script>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+  <script>
+
+</script>
   <!--script type="text/javascript" src=""></script-->
 </head>
 
@@ -35,17 +39,21 @@
 
   </div> <!-- line spacing -->
 
-  <div class="flex-container">
-
+  <div class="flex-container6">
+<br>
     <div class="one">
+
       <p>John King <br> IT Student</p>
     </div>
+    <br>
   </div>
 
   <div class="flex-container3">
-    <h1><a name="about"><b>About me</b></h1>
+    <h1 style="padding: 10px;"><a name="about" ><b>About me</b><br><br></h1>
     <img src="img/2.jpg" alt="" style="width: 50%;      float: left;  padding-right: 10px;" />
-    <p>I am John King and I was born in 1996. Graduated High School in 2014. Enrolled in university from 2015. I used to play Chess for Sedibeng. </p>
+    <p>I am John King and I was born in 1996. Graduated High School in 2014. Enrolled in university from 2015. I used to play Chess for Sedibeng. My objective is:<br>
+    I would like to build up experience to one day become a Senior Developer, being able to manipulate many software with a professional touch. I also have an interest in Artificial Intelligence.
+  </p>
 
 
     <br>
@@ -144,10 +152,11 @@
     <h1>NodeJS</h1>
     <p>During my time with NodeJs, I experimented on using MongoDB. <br> However useful this guide was, I still needed to adapt to newer versions. NodeJS is integrated here to save comments about my CV at the moment. NodeJS has weak support
       especially when you want to use heroku. Heroku breaks the github desktop app not allowing commits to save. I used Express REST API to create my server. The local web worked/works flawlessly when using Postman to POST and GET. Heroku deployment
-      will be stand alone. NodeJS is used for steamAPI<br></p>
-    <iframe width="40%" height="100%" src="https://www.youtube.com/embed/WDrU305J1yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      will be stand alone. NodeJS is used for steamAPI<br><br></p>
+    <iframe width="30%" height="100%" src="https://www.youtube.com/embed/WDrU305J1yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <!-- <video src="Marvel.mp4" width="100%"> -->
     <!-- <> -->
+    <br>
   </div>
 
 
@@ -190,7 +199,7 @@
 
 
 
-  <form class="default" action="https://mongodb-cv26047179.herokuapp.com/CV" method="post" id="default" target="itembase">
+  <form class="default" action="https://mongodb-cv26047179.herokuapp.com/CV" method="post" id="default" target="hiddenFrame" onsubmit="Formvalidation()">
     <div class="formIn-container">
       <b>Name:</b> <input type="text" name="name" id="name"><br>
       <b>Email:</b> <input type="email" name="email" id="email"><br>
@@ -203,7 +212,7 @@
     <!-- Upload resume: <input type="file" name="" value="" accept="pdf"> -->
   </form>
 
-
+<iframe name="hiddenFrame" class="hide"></iframe>
 
   <br>
 
@@ -216,6 +225,8 @@
     <br>
     <a class="fa fa-instagram" href="https://www.google.com"> Click here for Instagram</a> <!-- Anchor tag -->
     <br>
+    <a class="fa fa-github-alt" href="https://github.com/JohnH-King/CMPG-323-Project-1-26047179"> Link to Github source code</a>
+    	<br>
     <!--a href="http://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=440&count=3&maxlength=300&format=json">A typical Steam JSON file</a-->
     <p class="copy" style="font-size:0.85rem;""> <span>&#169;</span> Copyright 2020 - All Rights Reserved</p><br>
   </div>

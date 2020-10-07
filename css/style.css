@@ -28,10 +28,18 @@ body {
   border: 3px solid gold;
 }
 
+.hide {
+  position:absolute;
+  top:-1px;
+  left:-1px;
+  width:1px;
+  height:1px;
+  }/*style for itembase target to be hidden*/
+
 .one{
   background-color: gold; /*  amother color convention available hsla(250,75%,72%,0.75);*/
   font-size: 20px;
-  padding: 10px;
+  padding: 20px;
   border: none;
   border-radius: 50%;
 
@@ -70,8 +78,9 @@ p {
 }
 
 #one{
-  background-color: cyan;
+  background-color: black;
   border: 3px solid ##FFF8DC;
+
   animation-name: name;
   animation-duration: 3s;
   animation-timing-function: ease;
@@ -193,6 +202,18 @@ footer {
   justify-content:center;
   align-items:center;
 
+}
+
+.flex-container6 {
+  display:flex;
+  overflow-x: auto;
+  flex:1;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background-color: lightblue;
 }
 
 .link-container {
