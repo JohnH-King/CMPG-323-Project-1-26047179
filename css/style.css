@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /*google fonts api*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-*{
+/*google fonts api*/
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,16 +19,14 @@ body {
   font-family: 'Open Sans', sans-serif;
   display: flex;
   width: 100%;
-  height: 100%;
   margin: 0;
-  overflow-y:auto;
+  overflow-y: auto;
   overflow-x: hidden;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 3px solid gold;
 }
-
 
 footer {
   display: flex;
@@ -41,26 +40,32 @@ button {
   padding: 10px 20px;
 }
 
-button:hover{
+button:hover {
   background-color: gray;
   color: black;
 }
 
-.hide {
-  position:absolute;
-  top:-1px;
-  left:-1px;
-  width:1px;
-  height:1px;
-  }/*style for itembase target to be hidden*/
+.a {
+  padding: 10px;
+}
 
-.one{
-  background-color: gold; /*  amother color convention available hsla(250,75%,72%,0.75);*/
+.hide {
+  position: absolute;
+  visibility: hidden;
+  top: -1px;
+  left: -1px;
+  width: 1px;
+  height: 1px;
+}
+
+/*style for itembase target to be hidden*/
+.one {
+  background-color: gold;
+  /*  amother color convention available hsla(250,75%,72%,0.75);*/
   font-size: 20px;
   padding: 20px;
   border: none;
   border-radius: 50%;
-
   animation-name: first;
   animation-duration: 3s;
   animation-timing-function: ease;
@@ -68,24 +73,24 @@ button:hover{
   animation-direction: alternate;
 }
 
-#img{
+#img {
   max-width: 100%;
   height: 100%;
 }
 
 .p {
   font-size: 2vh;
-  padding: 5px;
+  padding: 10px;
 }
 
-.h1{
+.h1 {
   justify-content: center;
   align-items: center;
 }
 
 #scrollToTopBtn {
-  position: static;
-  bottom: 15px;
+  display: flex;
+  flex: 1;
   background-color: orange;
   border: none;
   border-radius: 50%;
@@ -93,19 +98,19 @@ button:hover{
   cursor: pointer;
   font-size: 16px;
   line-height: 48px;
-  width: 48px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-#two{
+#two {
   background-color: #008B8B;
   border: 3px solid gray;
   padding: 20px;
 }
 
-#one{
+#one {
   background-color: black;
   border: 3px solid ##FFF8DC;
-
   animation-name: second;
   animation-duration: 3s;
   animation-timing-function: ease;
@@ -113,7 +118,7 @@ button:hover{
   animation-direction: alternate;
 }
 
-#default{
+#default {
   background-color: white;
 }
 
@@ -131,50 +136,59 @@ button:hover{
   margin: 0 auto;
 }
 
-
 /* animations */
 @keyframes first {
-  0%{
+  0% {
     background-color: gray;
   }
-  25%{
+
+  25% {
     background-color: blue;
   }
-  50%{
+
+  50% {
     background-color: red;
   }
-  75%{
+
+  75% {
     background-color: green;
   }
-  100%{
+
+  100% {
     background-color: white;
   }
 }
 
-@keyframes second { /* shades of red */
-  0%{
+@keyframes second {
+
+  /* shades of red */
+  0% {
     background-color: #ffb3b3;
   }
-  25%{
-    background-color:#ff9999;
+
+  25% {
+    background-color: #ff9999;
   }
-  50%{
+
+  50% {
     background-color: #ff6666;
   }
-  75%{
+
+  75% {
     background-color: #ff3333;
   }
-  100%{
+
+  100% {
     background-color: #ff1a1a;
   }
 }
 
-textarea{
+textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 90%;
-  width: 100%;
+  width: 98%;
   padding: 10px;
 }
 
@@ -185,140 +199,140 @@ textarea{
 
 /* containers for divs and more*/
 .card-container {
-  display:flex;
-  flex:1;
+  display: flex;
+  flex: 1;
   flex-wrap: wrap;
   min-width: 10%;
   max-width: 100%;
-  flex-direction:row;
-  justify-content:center;
-  align-items:center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-container {
-  display:flex;
+  display: flex;
   overflow-x: auto;
-  flex:1;
+  flex: 1;
   flex-wrap: wrap;
   width: 100%;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: lightblue;
 }
 
 .flex-container-attention {
-  display:flex;
+  display: flex;
   overflow-x: auto;
   flex: 1;
   width: 100%;
   border-radius: 150px;
-  flex-direction:column;
-
-
+  flex-direction: column;
 }
 
 .flex-container2 {
-  display:flex;
-  flex:1;
+  display: flex;
+  flex: 1;
   flex-wrap: wrap;
   width: 100%;
-  flex-direction:row;
-  justify-content:center;
-  align-items:center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-container-grid1 {
-  display:grid;
+  display: grid;
   grid-template-columns: 50% 50%;
   overflow-y: auto;
   overflow-x: auto;
-  flex:1;
+  flex: 1;
   flex-wrap: wrap;
   width: 100%;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-container-grid2 {
-  display:grid;
+  display: grid;
   grid-template-columns: 20% 20% 20% 20%;
   overflow-y: auto;
   overflow-x: auto;
-  flex:1;
+  flex: 1;
   flex-wrap: wrap;
   width: 100%;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-container4 {
-  display:flex;
+  display: flex;
   overflow-x: auto;
-  flex:1;
+  flex: 1;
   flex-wrap: wrap;
   width: 100%;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #008C8C;
 }
 
-.flex-container5{
+.flex-container5 {
+  display: flex;
+  overflow-x: auto;
+  flex: 1;
+  flex-wrap: wrap;
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #008C8C;
+  margin: 10px;
   padding: 10px;
-  display:flex;
-  flex:1;
-
-  justify-content:center;
-  align-items:center;
-
 }
 
 .flex-container6 {
-  display:flex;
+  display: flex;
   overflow-x: auto;
-  flex:1;
+  flex: 1;
   flex-wrap: wrap;
   width: 100%;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: lightblue;
 }
 
 .link-container {
-  display:flex;
+  display: flex;
   overflow-x: auto;
-  overflow-y: hidden;
-  flex:1;
+  overflow-y: auto;
+  flex: 1;
   flex-wrap: wrap;
   width: 100%;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: lightblue;
   background-image: linear-gradient(gray 0%, #A9A9A9 100%);
   border: 2px solid black;
 }
 
-.formIn-container{
-  display:flex;
+.formIn-container {
+  display: flex;
   overflow-x: auto;
-  flex:1;
+  flex: 1;
   flex-wrap: wrap;
   width: 100%;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: lightblue;
   border: 2px solid darkblue;
-
 }
-.flex-container2 > div {
+
+.flex-container2>div {
   background-color: #f1f1f1;
   margin: 0px;
   padding: 0px;
@@ -328,94 +342,95 @@ textarea{
 /* Navigation bar */
 .topnav {
   position: sticky;
-  top:0px;
+  top: 0px;
   display: flex;
-  flex:1;
+  flex: 1;
   overflow: hidden;
-  background-color: green; /* #333 */
+  background-color: green;
+  /* #333 */
   width: 100%;
-  z-index: 1; /* this makes the sticky postition not get overlapped by something like flip tiles */
+  z-index: 1;
+  /* this makes the sticky postition not get overlapped by something like flip tiles */
 }
-.topnav a {
-        float: left;
-        color: black;
-        background-color: aqua;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 16px;
-        /* width: 95%;  this make the bars flex "wrap"*/
-      }
-      .topnav a:hover {
-        background-color: gray;
-        color: black;
-      }
-      .topnav a.active {
-        background-color: #4CAF50 ; /* #4CAF50 */
-        color: black;
-      }
 
+.topnav a {
+  float: left;
+  color: black;
+  background-color: aqua;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  /* width: 95%;  this make the bars flex "wrap"*/
+}
+
+.topnav a:hover {
+  background-color: gray;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  /* #4CAF50 */
+  color: black;
+}
 
 /* flip cards */
-      .flip-card {
-        background-color: transparent;
-        width: 300px;
-        height: 300px;
-        perspective: 1000px;
-        margin: 0 15px 30px;
-      }
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 0 15px 30px;
+}
 
-      .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        transition: transform 1s;
-        transform-style: preserve-3d;
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
 
-      }
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
 
-      .flip-card:hover .flip-card-inner{
-        transform: rotateY(180deg);
-      }
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  /*-- default for safari browser --*/
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
 
-      .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden; /*-- default for safari browser --*/
-        display: flex;
-        justify-content: center;
-        flex-direction:column;
-        align-items: center;
-        object-fit: contain;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+.flip-card-back {
+  color: red;
+  background-color: white;
+  transform: rotateY(180deg);
+}
 
-      }
+.flip-card-front {
+  background-color: #bbb;
+}
 
-      .flip-card-back {
-        color: red;
-        background-color: white;
-        transform:  rotateY(180deg);
-      }
+.flip-card-back>p {
+  margin-top: 10px;
+  line-height: 1.6;
+}
 
-
-      .flip-card-front {
-        background-color: #bbb;
-      }
-
-
-
-      .flip-card-back > p {
-         margin-top: 10px;
-         line-height: 1.6;
-      }
-
-      .flip-card-back p span{
-        display: block;
-        font-size: 1rem;
-        font-weight: bolder;
-        margin: 1.25rem;
-      }
+.flip-card-back p span {
+  display: block;
+  font-size: 1rem;
+  font-weight: bolder;
+  margin: 1.25rem;
+}

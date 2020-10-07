@@ -2,7 +2,9 @@
 var mybutton = document.getElementById("scrollToTopBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+  scrollFunction()
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -22,7 +24,7 @@ function loadDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-     document.getElementById("demo").innerHTML = this.responseText;
+      document.getElementById("demo").innerHTML = this.responseText;
     }
   };
   xhttp.open("GET", "ajax_info.txt", true);
@@ -32,8 +34,8 @@ function loadDoc() {
 //Chuck Norris api
 function randomFact() {
   var xmlhttp = new XMLHttpRequest();
-  var url= "https://api.chucknorris.io/jokes/random";
-  xmlhttp.onreadystatechange= function() {
+  var url = "https://api.chucknorris.io/jokes/random";
+  xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       //get json
       var json = JSON.parse(this.responseText);
@@ -41,7 +43,7 @@ function randomFact() {
     }
   };
   xmlhttp.open("GET", url, true);
-  xmlhttp.send();//call api endpoint for facts
+  xmlhttp.send(); //call api endpoint for facts
 }
 
 function parseResponse(json) {
@@ -55,8 +57,8 @@ document.getElementById("logo").addEventListener("click", function() {
 
 function nasa() {
   var xmlhttp = new XMLHttpRequest();
-  var url= "https://api.nasa.gov/planetary/apod?api_key=yvLShTsXffXprPbFBaxiBFmPbt3ff6JmEm0Y3Guj";
-  xmlhttp.onreadystatechange= function() {
+  var url = "https://api.nasa.gov/planetary/apod?api_key=yvLShTsXffXprPbFBaxiBFmPbt3ff6JmEm0Y3Guj";
+  xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       //get json
       var json = JSON.parse(this.responseText);
@@ -64,7 +66,7 @@ function nasa() {
     }
   };
   xmlhttp.open("GET", url, true);
-  xmlhttp.send();//call api endpoint for facts
+  xmlhttp.send(); //call api endpoint for facts
 }
 
 function parseResponser(json) {
@@ -72,9 +74,10 @@ function parseResponser(json) {
   document.getElementById("img").innerHTML = "<img src=" + json["url"] + " />";
   if (document.getElementById("copyright")) {
 
-  document.getElementById("copyright").innerHTML="By " + json["copyright"];}
-  document.getElementById("title").innerHTML= json["title"];
-  document.getElementById("explanation").innerHTML= json["explanation"];
+    document.getElementById("copyright").innerHTML = "By " + json["copyright"];
+  }
+  document.getElementById("title").innerHTML = json["title"];
+  document.getElementById("explanation").innerHTML = json["explanation"];
 }
 
 window.getElementById("logo").addEventListener("click", function() {
