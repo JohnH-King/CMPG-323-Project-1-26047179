@@ -145,23 +145,29 @@ button:hover{
 
 @keyframes second { /* shades of red */
   0%{
-    background-color: #ffffff;
+    background-color: #ffb3b3;
   }
   25%{
-    background-color: #ff8080;
+    background-color:#ff9999;
   }
   50%{
-    background-color: #ff0000;
+    background-color: #ff6666;
   }
   75%{
-    background-color: #cc0000;
+    background-color: #ff3333;
   }
   100%{
-    background-color: #990000;
+    background-color: #ff1a1a;
   }
 }
 
-
+textarea{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 90%;
+  width: 100%;
+}
 
 /* star style*/
 .checked {

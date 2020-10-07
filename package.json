@@ -4,9 +4,11 @@
   "description": "does MongoDB",
   "main": "app.js",
   "dependencies": {
+    "ajax": "0.0.4",
     "express": "^4.17.1",
     "mongoose": "^5.10.7",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "nasa": "0.0.1"
   },
   "engines": {
     "node": "^12.18.4"

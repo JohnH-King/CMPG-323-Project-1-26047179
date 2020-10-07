@@ -52,3 +52,31 @@ function parseResponse(json) {
 document.getElementById("logo").addEventListener("click", function() {
   randomFact();
 });
+
+function nasa() {
+  var xmlhttp = new XMLHttpRequest();
+  var url= "https://api.nasa.gov/planetary/apod?api_key=yvLShTsXffXprPbFBaxiBFmPbt3ff6JmEm0Y3Guj";
+  xmlhttp.onreadystatechange= function() {
+    if (this.readyState == 4 && this.status == 200) {
+      //get json
+      var json = JSON.parse(this.responseText);
+      parseResponser(json);
+    }
+  };
+  xmlhttp.open("GET", url, true);
+  xmlhttp.send();//call api endpoint for facts
+}
+
+function parseResponser(json) {
+  //simple object with a value prop
+  document.getElementById("img").innerHTML = "<img src=" + json["url"] + " />";
+  if (document.getElementById("copyright")) {
+
+  document.getElementById("copyright").innerHTML="By " + json["copyright"];}
+  document.getElementById("title").innerHTML= json["title"];
+  document.getElementById("explanation").innerHTML= json["explanation"];
+}
+
+document.getElementById("logo").addEventListener("click", function() {
+  nasa();
+})
