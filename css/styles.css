@@ -2,6 +2,10 @@ body {
   background-color: Silver;
   font-family: Arial, Helvetica, sans-serif;
 }
+html, body {
+  width: 100%;
+  height: 100%;
+}
 h1:first-child {
   color: Gold;
   position: relative;
