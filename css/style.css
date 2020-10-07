@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /*google fonts api*/
 
-{
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,7 +24,8 @@ body {
   overflow-x: hidden;
   flex-direction:column;
   justify-content: center;
-  align-items: center;border: 3px solid gold;
+  align-items: center;
+  border: 3px solid gold;
 }
 
 .one{
@@ -116,10 +117,8 @@ footer {
   flex: 1;
   width: 100%;
   border-radius: 150px;
-
   flex-direction:column;
   float: right;
-
 }
 
 .flex-container2 {
@@ -163,6 +162,34 @@ footer {
 
   justify-content:center;
   align-items:center;
+
+}
+
+.link-container {
+  display:flex;
+  overflow-x: auto;
+  flex:1;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background-color: lightblue;
+  background-image: linear-gradient(gray 0%, #A9A9A9 100%);
+  border: 2px solid black;
+}
+
+.formIn-container{
+  display:flex;
+  overflow-x: auto;
+  flex:1;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background-color: lightblue;
+  border: 2px solid darkblue;
 
 }
 .flex-container2 > div {

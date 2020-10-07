@@ -2,245 +2,236 @@
 <html lang="en" dir="ltr">
 
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>John King CV</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/style.css"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <!--script src="js/script.js"></script-->
-    <script src="js/script.js"></script>
-    <script src="api/steam/functions.js"></script>
-    <script src="api/steam/showfunctions.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John King CV</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!--script src="js/script.js"></script-->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/material-dashboard.css?v=1.9.0" rel="stylesheet" />
+  <link href="css/demo-documentation.css?v=1.9.0" rel="stylesheet" />
+  <script src="js/script.js"></script>
+  <script src="api/steam/functions.js"></script>
+  <script src="api/steam/showfunctions.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+  <!--script type="text/javascript" src=""></script-->
+</head>
 
-    <!--script type="text/javascript" src=""></script-->
-  </head>
+<body>
+  <div class="topnav">
+    <a class="active" href="#home">CV</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#api">API</a>
+    <p></p>
 
-  <body>
+    <a href="img/John_King_CV.pdf" target="_blank"><b>Download my CV</b></a>
+    <!--embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://johnh-king.github.io/CMPG-323-Project-1-26047179/img/John_King_CV.pdf" width="500" height="375"-->
 
+  </div> <!-- line spacing -->
 
+  <div class="flex-container">
 
-    <div class="topnav">
-      <a class="active" href="#home">CV</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#api">API</a>
-      <p></p>
-
-        <a href="img/John_King_CV.pdf" target="_blank"><b>Download my CV</b></a>
-        <!--embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://johnh-king.github.io/CMPG-323-Project-1-26047179/img/John_King_CV.pdf" width="500" height="375"-->
-
-    </div> <!-- line spacing -->
-
-    <div class="flex-container">
-
-      <div class="one">
-        <p>John King <br> IT Student</p>
-      </div>
+    <div class="one">
+      <p>John King <br> IT Student</p>
     </div>
+  </div>
 
-    <div class="flex-container3">
-      <h1><a name="about"><b>About me</b></h1>
-      <img src="img/2.jpg" alt="" style="width: 50%;      float: left;  padding-right: 10px;"/><br>
-      <p >I am John King and I was born in 1996. Graduated High School in 2014. Enrolled in university from 2015. I used to play Chess for Sedibeng. </p>
+  <div class="flex-container3">
+    <h1><a name="about"><b>About me</b></h1>
+    <img src="img/2.jpg" alt="" style="width: 50%;      float: left;  padding-right: 10px;" /><br>
+    <p>I am John King and I was born in 1996. Graduated High School in 2014. Enrolled in university from 2015. I used to play Chess for Sedibeng. </p>
 
 
-<br>
+    <br>
 
     <div style="postition=flex-end;" id="like_button_container"></div><br>
+  </div>
+
+  <!--<div class="HalfRating"></div>  DOM container-->
+
+
+  <div class="flex-container4">
+    <h1><a name="skills"><br>Skills</h1>
+    <div class="flex-container2">
+      <span style="padding: 10px"> HTML</span>
+      <span class="fa fa-star checked fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star-half-full" style="color: orange"></span><br>
     </div>
 
-    <!--<div class="HalfRating"></div>  DOM container-->
-
-
-    <div class="flex-container4" >
-      <h1><a name="skills"><br>Skills</h1>
-      <div class="flex-container2">
-        <span style="padding: 10px"> HTML</span>
-        <span class="fa fa-star checked fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star-half-full" style="color: orange"></span><br>
-      </div>
-
-      <div class="flex-container2">
-        <span style="padding: 10px"> CSS</span>
-        <span class="fa fa-star checked fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star" ></span><br>
-      </div>
-      <div class="flex-container2">
-        <span style="padding: 10px"> Java</span>
-        <span class="fa fa-star checked fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star-half-full" style="color: orange"></span><br>
-      </div>
-      <div class="flex-container2">
-        <span style="padding: 10px"> C# </span>
-        <span class="fa fa-star checked fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star-half-full" style="color: orange"></span><br>
-      </div>
-      <div class="flex-container2">
-        <span style="padding: 10px"> Python </span>
-        <span class="fa fa-star checked fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star-half-full" style="color: orange"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span><br>
-      </div>
-      <div class="flex-container2">
-        <span style="padding: 10px"> Android SDK</span>
-        <span class="fa fa-star checked fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked" style="color: orange"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span><br>
-      </div>
-      <div class="flex-container2">
-        <span style="padding: 10px">Javascript</span>
-        <span class="fa fa-star checked fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked" style="color: orange"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span><br>
-      </div>
-      <div class="flex-container2">
-        <span style="padding: 10px">Delphi</span>
-        <span class="fa fa-star checked fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span><br>
-      </div>
-      <div class="flex-container2">
-        <span style="padding: 10px">SQL</span>
-        <span class="fa fa-star checked fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked" style="color: orange"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span><br>
-      </div>
+    <div class="flex-container2">
+      <span style="padding: 10px"> CSS</span>
+      <span class="fa fa-star checked fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span><br>
     </div>
-
-
-
-
-
-    <div class="flex-container3" id="one">
-      <p id="two">Sample &quot video &quot</p> <!-- & is used to display special characters -->
-
-
-      <h1>NodeJS</h1>
-      <p>During my time with NodeJs, I experimented on using MongoDB. <br> However useful this guide was, I still needed to adapt to newer versions. NodeJS is integrated here to save comments about my CV at the moment. NodeJS has weak support
-        especially when you want to use heroku. Heroku breaks the github desktop app not allowing commits to save. I used Express REST API to create my server. The local web worked/works flawlessly when using Postman to POST and GET. Heroku deployment will be stand alone. NodeJS is used for steamAPI<br></p>
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WDrU305J1yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!-- <video src="Marvel.mp4" width="100%"> -->
-        <!-- <> -->
+    <div class="flex-container2">
+      <span style="padding: 10px"> Java</span>
+      <span class="fa fa-star checked fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star-half-full" style="color: orange"></span><br>
     </div>
+    <div class="flex-container2">
+      <span style="padding: 10px"> C# </span>
+      <span class="fa fa-star checked fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star-half-full" style="color: orange"></span><br>
+    </div>
+    <div class="flex-container2">
+      <span style="padding: 10px"> Python </span>
+      <span class="fa fa-star checked fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star-half-full" style="color: orange"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span><br>
+    </div>
+    <div class="flex-container2">
+      <span style="padding: 10px"> Android SDK</span>
+      <span class="fa fa-star checked fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked" style="color: orange"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span><br>
+    </div>
+    <div class="flex-container2">
+      <span style="padding: 10px">Javascript</span>
+      <span class="fa fa-star checked fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked" style="color: orange"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span><br>
+    </div>
+    <div class="flex-container2">
+      <span style="padding: 10px">Delphi</span>
+      <span class="fa fa-star checked fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span><br>
+    </div>
+    <div class="flex-container2">
+      <span style="padding: 10px">SQL</span>
+      <span class="fa fa-star checked fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked" style="color: orange"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span><br>
+    </div>
+  </div>
 
 
-    <!-- Divider    -->
-    <br>
-    <h1><a name="api">API</h1>
 
 
-    <br><br>
-    <div class="card-container">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="img/1A.jpg" alt="" style="width:100%;height:100%;">
-          </div>
-          <div class="flip-card-back">
-            <h1>John King</h1>
-            <p>IT student</p>
-            <p>Baka</p>
-          </div>
+
+  <div class="flex-container3" id="one">
+    <p id="two">Sample &quot video &quot</p> <!-- & is used to display special characters -->
+
+
+    <h1>NodeJS</h1>
+    <p>During my time with NodeJs, I experimented on using MongoDB. <br> However useful this guide was, I still needed to adapt to newer versions. NodeJS is integrated here to save comments about my CV at the moment. NodeJS has weak support
+      especially when you want to use heroku. Heroku breaks the github desktop app not allowing commits to save. I used Express REST API to create my server. The local web worked/works flawlessly when using Postman to POST and GET. Heroku deployment
+      will be stand alone. NodeJS is used for steamAPI<br></p>
+    <iframe width="40%" height="100%" src="https://www.youtube.com/embed/WDrU305J1yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- <video src="Marvel.mp4" width="100%"> -->
+    <!-- <> -->
+  </div>
+
+
+  <!-- Divider    -->
+  <br>
+  <h1><a name="api">API</h1>
+
+
+  <br><br>
+  <div class="card-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/1A.jpg" alt="" style="width:100%;height:100%;">
         </div>
-      </div>
-
-
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="img/ken.jpg" alt="" style="width:100%;height:100%;">
-          </div>
-          <div class="flip-card-back">
-            <h1>Zaraki Kenpachi</h1>
-            <p>11th Division Captian</p>
-            <p>Badass</p>
-          </div>
+        <div class="flip-card-back">
+          <h1>John King</h1>
+          <p>IT student</p>
+          <p>Baka</p>
         </div>
       </div>
     </div>
 
 
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/ken.jpg" alt="" style="width:100%;height:100%;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Zaraki Kenpachi</h1>
+          <p>11th Division Captian</p>
+          <p>Badass</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
-    <form class="default" action="https://mongodb-cv26047179.herokuapp.com/CV" method="post" id="default" target="itembase">
-      <div class="flex-container">
-        <b>Name:</b> <input type="text" name="name" id="name"><br>
-        <b>Email:</b> <input type="email" name="email" id="email"><br>
 
-        <b>Comments:</b> <br><textarea name="comments" id="comments" cols="120" rows="4" style="width:96%;" placeholder="Questions?"></textarea><br> <!-- width does not load out of css with the initial call -->
+
+  <form class="default" action="https://mongodb-cv26047179.herokuapp.com/CV" method="post" id="default" target="itembase">
+    <div class="formIn-container">
+      <b>Name:</b> <input type="text" name="name" id="name"><br>
+      <b>Email:</b> <input type="email" name="email" id="email"><br>
+
+      <b>Comments:</b> <br><textarea name="comments" id="comments" cols="120" rows="4" style="width:96%;" placeholder="Questions?"></textarea><br> <!-- width does not load out of css with the initial call -->
 
       <button type="submit" name="button" style="background-color:aqua" value="Submit"><b>Submit</b></button><br>
       <button type="reset" name="button" style="background-color:aqua"><b>Reset</b></button><br>
     </div>
-      <!-- Upload resume: <input type="file" name="" value="" accept="pdf"> -->
-    </form>
+    <!-- Upload resume: <input type="file" name="" value="" accept="pdf"> -->
+  </form>
 
 
 
-<br><br>
-    <form action="functions.js" method="get" target="_blank">
-      <div class="form-group" id="showRecPlayed">
-        <label for="getNewsInput">ShowRecentlyPlayedGames</label>
-        <input type="text" class="form-control" id="GetRecPlayedInput" placeholder="Enter SteamID to see recently played games">
-        <button class="btn btn-primary" id="getShowRecPlayed" type="button">Submit</button>
-      </div>
-    </form>
-    <div id="RecentlyOwned"></div>
+  <br>
+
+
+  <div class="link-container" style="width: 200px">
     <br>
-    <div class="flex-container">
-
-
-    </div>
-
-    <div class="flex-container">
-      <a href="https://facebook.com"> Click here for Facebook</a>
-      <br>
-      <a href="https://www.google.com"> Click here for google</a> <!-- Anchor tag -->
-      <br>
-      <a href="http://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=440&count=3&maxlength=300&format=json">A typical Steam JSON file</a>
-    </div>
+    <a class="fa fa-facebook" href="https://facebook.com"> Click here for Facebook</a>
+    <br>
+    <a class="fa fa-instagram" href="https://www.google.com"> Click here for Instagram</a> <!-- Anchor tag -->
+    <br>
+    <!--a href="http://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=440&count=3&maxlength=300&format=json">A typical Steam JSON file</a-->
+  </div>
 
 
 
-    <footer>
-      <button onclick="topFunction()" id="scrollToTopBtn">top</button>
+  <footer>
+    <button onclick="topFunction()" id="scrollToTopBtn">top</button>
 
-    </footer>
+  </footer>
 
-    <!-- LOADING REACT -->
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    <!-- My react Component loading -->
+  <!-- LOADING REACT -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <!-- My react Component loading -->
 
-    <script src="react/like_button.js"></script>
-    <script src="react/ratings.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-  </body>
+  <script src="react/like_button.js"></script>
+  <script src="react/ratings.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
 
 </html>
