@@ -275,7 +275,6 @@ footer {
   display: flex;
   flex:1;
   flex-wrap: wrap;
-  width: 100%;
   overflow: hidden;
   background-color: green; /* #333 */
   z-index: 1; /* this makes the sticky postition not get overlapped by something like flip tiles */
