@@ -244,7 +244,7 @@ textarea{
 
 .flex-container-grid2 {
   display:grid;
-  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-columns: 20% 20% 20% 20%;
   overflow-y: auto;
   overflow-x: auto;
   flex:1;
@@ -332,7 +332,7 @@ textarea{
   display: flex;
   flex:1;
   overflow: hidden;
-  background-color: transparent; /* #333 */
+  background-color: green; /* #333 */
   width: 100%;
   z-index: 1; /* this makes the sticky postition not get overlapped by something like flip tiles */
 }
