@@ -93,6 +93,7 @@ async function getGames() {
   const response = await fetch(proxyurl + steam_api);
   const data = await response.json();
 
+  //first game
   var logoUrl1 = "http://media.steampowered.com/steamcommunity/public/images/apps/" + data.response.games[0].appid + "/" + data.response.games[0].img_logo_url + ".jpg";
   var name1 = data.response.games[0].name;
   var hoursPlayed1 = Math.round(data.response.games[0].playtime_forever / 60);
@@ -100,6 +101,24 @@ async function getGames() {
   document.getElementById("lastPlayedUrl1").src = logoUrl1;
   document.getElementById("lastPlayedTitle1").innerHTML = name1;
   document.getElementById("lastPlayedHours1").innerHTML = hoursPlayed1;
+
+  //second game
+  var logoUrl2 = "http://media.steampowered.com/steamcommunity/public/images/apps/" + data.response.games[1].appid + "/" + data.response.games[1].img_logo_url + ".jpg";
+  var name2 = data.response.games[1].name;
+  var hoursPlayed2 = Math.round(data.response.games[1].playtime_forever / 60);
+
+  document.getElementById("lastPlayedUrl2").src = logoUrl2;
+  document.getElementById("lastPlayedTitle2").innerHTML = name2;
+  document.getElementById("lastPlayedHours2").innerHTML = hoursPlayed2;
+
+  //Third game
+  var logoUrl3 = "http://media.steampowered.com/steamcommunity/public/images/apps/" + data.response.games[2].appid + "/" + data.response.games[2].img_logo_url + ".jpg";
+  var name3 = data.response.games[2].name;
+  var hoursPlayed3 = Math.round(data.response.games[2].playtime_forever / 60);
+
+  document.getElementById("lastPlayedUrl3").src = logoUrl3;
+  document.getElementById("lastPlayedTitle3").innerHTML = name3;
+  document.getElementById("lastPlayedHours3").innerHTML = hoursPlayed3;
 }
 getGames(); //runs it automatically
 
