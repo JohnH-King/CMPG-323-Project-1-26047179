@@ -282,7 +282,6 @@ textarea {
   display: flex;
   overflow-x: auto;
   flex: 1;
-  flex-wrap: wrap;
   width: 90%;
   flex-direction: column;
   justify-content: center;
