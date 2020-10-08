@@ -319,13 +319,13 @@ iframe {
 }
 
 .flex-container {
-  display: flex;
+
   overflow-x: auto;
   flex: 1;
   flex-wrap: wrap;
   width: 100%;
   flex-direction: column;
-  margin: auto;
+
   /*justify-content: center;*/
   align-items: center;
   background-color: lightblue;
