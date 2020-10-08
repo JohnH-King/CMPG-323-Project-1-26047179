@@ -22,6 +22,7 @@ body {
   display: flex;
   width: 100%;
   margin: 0;
+  font-size: 1vh;
   overflow-y: auto;
   overflow-x: hidden;
   flex-direction: column;
@@ -156,6 +157,7 @@ hr {
 
 #default {
   display: flex;
+  font-size: 1rem;
   flex: 1;
   flex-direction: column;
   width: 100%;
@@ -312,10 +314,8 @@ iframe {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
-  padding-top:20px;
   flex-direction: row;
-  margin: auto;
-/*justify-content: center;*/
+  justify-content: center;
   align-items: center;
 }
 
@@ -396,6 +396,7 @@ iframe {
   flex: 1;
   flex-wrap: wrap;
   width: 100%;
+  font-size: 2vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -432,6 +433,7 @@ iframe {
   overflow-x: auto;
   overflow-y: auto;
   flex: 1;
+  font-size: 2vh;
   flex-wrap: wrap;
   width: 100%;
   flex-direction: column;
@@ -570,6 +572,8 @@ iframe {
 /* game cards/tiles */
 .game-card {
   background-color: transparent;
+  overflow-x: hidden;
+  overflow-y: hidden;
   display: flex;
   flex: 1;
   width: 183px;
@@ -592,13 +596,13 @@ iframe {
 
 .game-card-front, .game-card-back {
   position: absolute;
+  display: flex;
   width: 100%;
   height: 100%;
   background-color: white;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   /*-- default for safari browser --*/
-  display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -627,11 +631,13 @@ iframe {
 .game-card-back>p {
   display: flex;
   flex: 1;
-  font-size: 1.3vh;
   width: 100%;
   height: 100%;
-  padding: 1px;
-  overflow-x: auto;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0.66rem;
+  color: black;
+  overflow-x: hidden;
   overflow-y: hidden;
   justify-content: center;
   align-items: center;
@@ -641,5 +647,4 @@ iframe {
   display: block;
   font-size: 1rem;
   font-weight: bolder;
-  margin: 5px;
 }

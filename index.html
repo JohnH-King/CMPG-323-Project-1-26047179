@@ -12,18 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/style.min.css" />
   <!--script src="js/script.js"></script-->
-<style>
-.flexer{
-  display: flex;
-  flex:1;
-  max-width:975px;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #97D0D0
-}
-</style>
+
 
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
@@ -171,6 +160,7 @@
     <!-- steam API -->
     <fieldset style="border:1px solid #999;box-shadow:0 0 60px #999;">
     <p>The steam API:<br> Being a gamer I like to see just how much time I have spent playing games. The API fecthes my 3 most resontly played games in flip cards and display the title and total hourse played.</p>
+    <div class="flex-container1">
     <div class="card-container">
       <div class="game-card">
         <div class="game-card-inner">
@@ -178,14 +168,14 @@
             <img id="lastPlayedUrl1">
           </div>
           <div class="game-card-back">
-            <h1 style="font-size: 15px;" id="title"></h1>
+            <h1 id="title"></h1>
             <p id="lastPlayedTitle1"></p>
-            <p>Hours played in total:
+            <p>Hours played in total:</p>
             <p id="lastPlayedHours1"></p>
             </p>
           </div>
         </div>
-      </div>
+      </div></div>
 
       <div class="game-card">
         <div class="game-card-inner">
@@ -193,7 +183,7 @@
             <img style="height:100%;" id="lastPlayedUrl2">
           </div>
           <div class="game-card-back">
-            <h1 style="font-size: 15px;" id="title"></h1>
+            <h1 id="title"></h1>
             <p id="lastPlayedTitle2"></p>
             <p>Hours played in total:
             <p id="lastPlayedHours2"></p>
@@ -208,17 +198,17 @@
             <img id="lastPlayedUrl3">
           </div>
           <div class="game-card-back">
-            <h1 style="font-size: 15px;" id="title"></h1>
+            <h1 id="title"></h1>
             <p id="lastPlayedTitle3"></p>
             <p>Hours played in total:
             <p id="lastPlayedHours3"></p>
             </p>
           </div>
         </div>
-      </div>
+      </div></div>
       <!-- only 3 recently played -->
 
-    </div>
+
 </fieldset>
 
     <br><br>
