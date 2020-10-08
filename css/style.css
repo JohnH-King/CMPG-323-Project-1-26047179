@@ -17,7 +17,7 @@
 
 
 body {
-  background-color: #008B8A;
+  background-color: #D5ECEC;
   font-family: 'Open Sans', sans-serif;
   display: flex;
   width: 100%;
@@ -270,11 +270,12 @@ textarea {
 .flexer{
   display: flex;
   flex:1;
-  width: 100%;
+  max-width:975px;
   height: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 1px solid #97D0D0
 }
 
 /* cards */
@@ -303,7 +304,7 @@ iframe {
 }
 
 .container {
-  2px 16px;
+  padding: 10px 16px;
 }
 
 /* containers for divs and more*/
@@ -436,8 +437,7 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightblue;
-  background-image: linear-gradient(gray 0%, #A9A9A9 100%);
+  background-image: linear-gradient(#eaeef0 0%, #A9A9A9 100%);
   border: 2px solid black;
 }
 

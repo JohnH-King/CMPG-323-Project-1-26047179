@@ -22,6 +22,7 @@
 </head>
 
 <body onload="nasa()">
+  <div class="flexer">
   <!-- loading nasa API on load, instead of through an Element -->
   <div class="topnav">
     <a class="active" href="#about">About</a>
@@ -31,29 +32,27 @@
 
     <a href="img/John_King_CV.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i>CV</a>
     <!--embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://johnh-king.github.io/CMPG-323-Project-1-26047179/img/John_King_CV.pdf" width="500" height="375"-->
-
   </div> <!-- line spacing -->
   <hr>
   <div class="flex-container6">
     <br>
     <div class="one">
-
       <p>John King <br> IT Student</p>
     </div>
     <br>
   </div>
   <div class="flex-container-grid1">
-
-    <span style="text-align:center">
-      <h1 style="padding: 10px;"><a name="about"><b>About me</b><br><br></a></h1>
-      <p>I am John King and I was born in 1996. I am eager to see what I can do.<br>
-        Graduated High School in 2014. Enrolled in university from 2015. I used to play Chess for Sedibeng. My objective is:<br><br>
-        I would like to build up experience to one day become a Senior Developer, being able to manipulate many software with a professional touch. I also have an interest in Artificial Intelligence.
-      </p>
-      <br><br>
-      <div id="like_button_container"></div><br>
-    </span>
-  </div>
+      <img src="img/2.jpg" alt="" style="width: 100%;      float: left;  padding-right: 10px;" />
+      <span style="text-align:center">
+        <h1 style="padding: 10px;"><a name="about"><b>About me</b><br><br></a></h1>
+        <p>I am John King and I was born in 1996. I am eager to see what I can do.<br>
+          Graduated High School in 2014. Enrolled in university from 2015. I used to play Chess for Sedibeng. My objective is:<br><br>
+          I would like to build up experience to one day become a Senior Developer, being able to manipulate many software with a professional touch. I also have an interest in Artificial Intelligence.
+        </p>
+        <br><br>
+        <div id="like_button_container"></div><br>
+      </span>
+    </div>
 
   <!--<div class="HalfRating"></div>  DOM container-->
   <hr>
@@ -258,7 +257,10 @@
 </fieldset>
 
   <div class="card" id="one">
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WDrU305J1yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <iframe style="width:95%; height:100%; min-height:650px" src="https://www.youtube.com/embed/WDrU305J1yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<footer>
       <div class="container">
         <h3 id="two">&quotRest&quot API using NodeJS<b>
             <p>During my time with NodeJs, I experimented on using MongoDB. <br> However useful this guide was, I still needed to adapt to newer versions. NodeJS is integrated here to save comments about my CV at the moment. Heroku broke the github
@@ -267,13 +269,13 @@
               is stand alone for input.<br></p>
 
       </div>
-
+</footer>
   </div>
 
 
   <hr>
 
-  <form action="https://mongodb-cv26047179.herokuapp.com/CV" method="post" id="default" target="_blank" onsubmit="Formvalidation()">
+  <form action="https://mongodb-cv26047179.herokuapp.com/CV" method="post" id="default" target="_blank" onsubmit="Formvalidation()" style="background-color:  #adbec5">
     <!-- hiddenFrame: put this in target when/if you don't want json confirmation, A script can be written for an alert, but I pref this output for an assignment <iframe name="hiddenFrame" class="hide"></iframe>-->
 
     <p>NodeJS Express REST</p><br>
@@ -318,6 +320,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script src="react/like_button.js"></script>
+</div>
 
 </body>
 
