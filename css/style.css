@@ -37,6 +37,10 @@ body {
   border: 3px solid gold;
 }
 
+form{
+  width: 100%;
+}
+
 footer {
   display: flex;
   justify-content: flex-end;
@@ -107,9 +111,11 @@ p {
 }
 .h2 {
   font-size: 2vh;
+  padding: 10px;
 }
 .h3 {
   font-size: 2vh;
+  padding: 10px;
 }
 .h4 {
   font-size: 2vh;
@@ -138,13 +144,13 @@ hr {
 
 #two {
   background-color: #008B8B;
-  border: 3px solid gray;
+  border: 2px solid #DDF0F0;
   padding: 20px;
 }
 
 #one {
   background-color: black;
-  border: 3px solid ##FFF8DC;
+  border: 1px solid #DDF0F0;
   animation-name: second;
   animation-duration: 3s;
   animation-timing-function: ease;
@@ -156,8 +162,10 @@ hr {
   display: flex;
   flex: 1;
   flex-direction: column;
-  min-width: 100%;
-  background-color: white;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  background-color: silver;
 
 }
 
@@ -278,7 +286,7 @@ textarea {
   display: flex;
   overflow-x: auto;
   flex: 1;
-  width: 50%;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -324,6 +332,19 @@ iframe {
   justify-content: center;
   align-items: center;
   background-color: lightblue;
+}
+
+
+.flex-container1 {
+  display: flex;
+  overflow-x: auto;
+  flex: 1;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#008b8b 0%, #8b8b00 100%);
 }
 
 .flex-container-attention {
@@ -380,7 +401,7 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #008C8C;
+  background-image: linear-gradient(#00D8D8 20%, #003F3F 100%);
 }
 
 .flex-container5 {
