@@ -43,8 +43,8 @@
     <br>
   </div>
   <div class="flex-container-grid1">
-    <img src="img/2.jpg" alt="" style="width: 100%;      float: left;  padding-right: 10px;" />
-    <span>
+
+    <span style="text-align:center">
       <h1 style="padding: 10px;"><a name="about"><b>About me</b><br><br></a></h1>
       <p>I am John King and I was born in 1996. I am eager to see what I can do.<br>
         Graduated High School in 2014. Enrolled in university from 2015. I used to play Chess for Sedibeng. My objective is:<br><br>
@@ -60,10 +60,13 @@
 
 
   <div class="flex-container4">
-    <h1><a name="skills"><br>Skills</a></h1>
+    <h1><a name="skills">
+      </a></h1>
     <br>
-    <a href="https://www.udemy.com/course/html5-css3-the-right-parts-complete-beginners-course/" style="color: black;"> This page was built with the knowledge acquired because of a great free Udemy course taught by Coding Bee</a>
-    <br>
+    <fieldset style="padding-bottom: 20px">
+      <legend style="padding: 20px"><b>Skills</b></legend>
+    <a href="https://www.udemy.com/course/html5-css3-the-right-parts-complete-beginners-course/" style="color: black; padding:30px"> This page was built with the knowledge acquired because of a great free Udemy course taught by Coding Bee</a>
+    <br><br>
     <div class="flex-container2">
       <span style="padding: 10px"> HTML</span>
       <span class="fa fa-star checked"></span>
@@ -145,13 +148,18 @@
       <span class="fa fa-star checked"></span>
       <span class="fa fa-star"></span><br>
     </div>
+    </fieldset>
+    <br>
+    <br>
   </div>
-  <hr>
-  <br>
+
+<br>
+
   <div class="flex-container1">
     <h1><a name="api">API</a></h1><br>
 
     <!-- steam API -->
+    <fieldset style="border:1px solid #999;box-shadow:0 0 60px #999;">
     <p>The steam API:<br> Being a gamer I like to see just how much time I have spent playing games. The API fecthes my 3 most resontly played games in flip cards and display the title and total hourse played.</p>
     <div class="card-container">
       <div class="game-card">
@@ -201,9 +209,10 @@
       <!-- only 3 recently played -->
 
     </div>
-
+</fieldset>
 
     <br><br>
+      <fieldset style="border:1px solid #999;box-shadow:0 0 60px #999;">
     <div class="flex-container-grid1">
       <div class="card-container">
         <div class="flip-card">
@@ -219,9 +228,13 @@
           </div>
         </div>
       </div>
-      <p>This API is the NASA APOD API that fetches a json string, which gives access to a .jpg, explanation, title, and copyright.<br> See a Nasa picture, the credit, and an explanation about the relevant image</p>
+<fieldset style="border:1px solid #999;box-shadow:0 0 60px #999;width:60%;">
+    <p>This API is the NASA APOD API that fetches a json string, which gives access to a .jpg, explanation, title, and copyright. See a Nasa picture, the credit, and an explanation about the relevant image</p>
+</fieldset>
     </div>
 
+  <br>
+  <hr>
     <div class="flex-container-grid1">
       <div class="card-container">
         <div class="flip-card">
@@ -237,9 +250,12 @@
           </div>
         </div>
       </div>
-      <p>This API is responsible for fetching random Chuck Norris facts. (Content might offend viewer)<br> Flip the card and press the button for your fact.</p>
+      <fieldset style="border:1px solid #999;box-shadow:0 0 60px #999;width:60%;">
+      <p>This API is responsible for fetching random Chuck Norris facts. (Content might offend viewer) Flip the card and press the button for your fact.</p>
+    </fieldset>
     </div>
   </div>
+</fieldset>
 
   <div class="card" id="one">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WDrU305J1yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
