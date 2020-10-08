@@ -92,9 +92,10 @@ window.onload = nasa();
 async function getGames() {
   const response = await fetch(proxyurl + steam_api);
   const data = await response.json();
+  var url = "http://media.steampowered.com/steamcommunity/public/images/apps/";
 
   //first game
-  var logoUrl1 = "http://media.steampowered.com/steamcommunity/public/images/apps/" + data.response.games[0].appid + "/" + data.response.games[0].img_logo_url + ".jpg";
+  var logoUrl1 = url + data.response.games[0].appid + "/" + data.response.games[0].img_logo_url + ".jpg";
   var name1 = data.response.games[0].name;
   var hoursPlayed1 = Math.round(data.response.games[0].playtime_forever / 60);
 
@@ -103,7 +104,7 @@ async function getGames() {
   document.getElementById("lastPlayedHours1").innerHTML = hoursPlayed1;
 
   //second game
-  var logoUrl2 = "http://media.steampowered.com/steamcommunity/public/images/apps/" + data.response.games[1].appid + "/" + data.response.games[1].img_logo_url + ".jpg";
+  var logoUrl2 = url + data.response.games[1].appid + "/" + data.response.games[1].img_logo_url + ".jpg";
   var name2 = data.response.games[1].name;
   var hoursPlayed2 = Math.round(data.response.games[1].playtime_forever / 60);
 
@@ -112,18 +113,19 @@ async function getGames() {
   document.getElementById("lastPlayedHours2").innerHTML = hoursPlayed2;
 
   //Third game
-  var logoUrl3 = "http://media.steampowered.com/steamcommunity/public/images/apps/" + data.response.games[2].appid + "/" + data.response.games[2].img_logo_url + ".jpg";
+  var logoUrl3 = url + data.response.games[2].appid + "/" + data.response.games[2].img_logo_url + ".jpg";
   var name3 = data.response.games[2].name;
   var hoursPlayed3 = Math.round(data.response.games[2].playtime_forever / 60);
 
   document.getElementById("lastPlayedUrl3").src = logoUrl3;
   document.getElementById("lastPlayedTitle3").innerHTML = name3;
   document.getElementById("lastPlayedHours3").innerHTML = hoursPlayed3;
+  //fourth is not possible with current proxy, in future I'd like to fix my steam node server
 }
 getGames(); //runs it automatically
 
 
-//cors anywhere seems handy enough not to need NodeJS again ~_~
+//cors anywhere seems handy enough not to need NodeJS again ~_~ proxy code untouched (recommended)
 (function() {
   var cors_api_host = 'cors-anywhere.herokuapp.com';
   var cors_api_url = 'https://' + cors_api_host + '/';
