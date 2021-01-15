@@ -63,8 +63,9 @@ button:hover {
 .one {
   background-color: gold;
   /*  amother color convention available hsla(250,75%,72%,0.75);*/
+
   font-size: 20px;
-  padding: 20px;
+  padding: 10px;
   border: none;
   border-radius: 50%;
   animation-name: first;
@@ -111,6 +112,7 @@ p {
 hr {
   border-top: 1px solid #D5ECEC;
   width: 100%;
+  margin: auto;
 }
 
 #like_button_container {
@@ -388,7 +390,7 @@ iframe {
 
 .flex-container4 {
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
   flex: 1;
   flex-wrap: wrap;
   width: 100%;
@@ -396,7 +398,7 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(#00D8D8 20%, #003F3F 100%);
+  background-image: linear-gradient(#00D8D8 20%, white 100%);
 }
 
 .flex-container5 {
@@ -474,6 +476,7 @@ iframe {
   /* #333 */
   width: 100%;
   z-index: 1;
+  margin: auto;
   /* this makes the sticky postition not get overlapped by something like flip tiles */
 }
 
