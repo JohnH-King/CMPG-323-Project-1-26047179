@@ -35,9 +35,9 @@
     <a href="img/John_King_CV.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i>CV</a>
     <!--embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://johnh-king.github.io/CMPG-323-Project-1-26047179/img/John_King_CV.pdf" width="500" height="375"-->
   </div> <!-- line spacing -->
-  <hr>
 
-    <div class="row">
+
+    <div class="row" style="margin: 0">
       <div class="col-lg-4 col-sm-12" style="margin: auto; margin-left: 0px">
     <img src="img/1C.jpg" alt="" style="width: 100%; height: 70vh;     float: left;" />
     </div>
@@ -50,7 +50,7 @@
         </div>
         <br/><br/><br/>
       </div>
-      <h1><a name="about"><b>About me</b><br></a></h1>
+      <h1><a name="about" class="text-info"><b>About me</b><br></a></h1>
       <p>I am John King and I was born in 1996. I am eager to see what I can do.<br>
         Graduated High School in 2014. Enrolled in university from 2015. I used to play Chess for Sedibeng. My objective is:<br><br>
         I would like to build up experience to one day become a Senior Developer, being able to manipulate many software with a professional touch. I also have an interest in Artificial Intelligence.<br><br>
@@ -67,7 +67,7 @@
 
 
   <div class="flex-container4">
-    <h1 style="align-content: center"><a name="skills">
+    <h1 class="text" style="align-content: center"><a name="skills">
       </a>Skills</h1>
     <br>
     <fieldset style="padding-bottom: 20px">
@@ -206,11 +206,11 @@
   </div>
     <fieldset style="border:1px solid #999;box-shadow:0 0 60px #999;">
   <div class="flex-container1" style=" overflow-x: hidden;"><br>
-    <h1><a name="api">API</a></h1><br>
+    <h1><a name="api" class="text">API</a></h1><br>
 
     <!-- steam API -->
-
-      <p style="text-align:center;">The steam API:<br> Being a gamer I like to see just how much time I have spent playing games. The API fecthes my 3 most resontly played games in flip cards and display the title and total hourse played.</p>
+<h4 class="text">The steam API:</h3>
+      <p style="text-align:center;"><br> Being a gamer I like to see just how much time I have spent playing games. The API fecthes my 3 most resontly played games in flip cards and display the title and total hourse played.</p>
 <div class="row pl-5 pr-5">
         <div class="card-container">
           <div class="game-card">
@@ -329,10 +329,11 @@
 
 
   <hr>
-<div class="row"style="padding:0px ;margin: 0px">
-  <div class="col-12 col-lg-7"style="background-color:  #adbec5; padding:0px ;margin: 0px">
-  <form action="https://mongodb-cv26047179.herokuapp.com/CV" method="post" id="default" target="_blank" onsubmit="Formvalidation()" style="  background-image: linear-gradient(#eaeef0 0%, #A9A9A9 100%);
+<div class="row form-group" style="padding:0px ;margin: 0px; background-color: #adbec5">
+
+  <form action="https://mongodb-cv26047179.herokuapp.com/CV" method="post" id="default" target="_blank" onsubmit="Formvalidation()"class="col-12 col-lg-7"style="background-color:  #adbec5; padding:0px ;margin: auto" style="
     border: 2px solid black;">
+
     <!-- hiddenFrame: put this in target when/if you don't want json confirmation, A script can be written for an alert, but I pref this output for an assignment <iframe name="hiddenFrame" class="hide"></iframe>-->
 
     <p style="font-size: 2vh;">NodeJS Express REST</p><br>
@@ -340,13 +341,15 @@
     <b>Email:</b> <input type="email" name="email" id="email"><br>
     <b>Comments:</b> <br><textarea name="comments" id="comments" cols="1000" rows="4" placeholder="Questions?"></textarea><br> <!-- width does not load out of css with the initial call -->
 
-    <button type="submit" name="Submit" value="Submit"><b>Submit</b></button><br>
-    <button type="reset" name="button"><b>Reset</b></button><br>
+<div class="row form-group">
+    <button class="btn btn-success" type="submit" name="Submit" value="Submit"><b>Submit</b></button><br>
+    <button class="btn btn-warning" type="reset" name="button"><b>Reset</b></button><br>
+</div>
     <!-- Upload resume: <input type="file" name="" value="" accept="pdf"> -->
   </form>
-</div>
 
-<div class="col-lg-5 col-12 offset-1"style="padding:0px ;margin: 0px"style="padding:0px ;margin: 0px">
+
+<div class="col-lg-5 col-sm-12 offset-1"style="padding:0px ;margin: 0px"style="padding:0px ;margin: 0px">
 
   <hr>
   <div class="link-container" >
