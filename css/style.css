@@ -160,7 +160,6 @@ hr {
 #default {
   display: flex;
   font-size: 1rem;
-  flex: 1;
   flex-direction: column;
   width: 100%;
   align-items: center;
@@ -269,6 +268,11 @@ textarea {
 .checked {
   color: orange;
 }
+.fa-star-half-full{
+  color:orange;
+}
+.fa-star {
+}
 
 /* overall body flex (perhaps redundant?)*/
 .flexer {
@@ -361,6 +365,7 @@ iframe {
   justify-content: center;
   align-items: center;
 }
+
 
 .flex-container-grid1 {
   display: grid;
