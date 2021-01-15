@@ -15,18 +15,24 @@
 
 */
 body {
-  background-color: #D5ECEC;
+  background-color: #960905;//#D5ECEC;
   font-family: 'Open Sans', sans-serif;
   display: flex;
   width: 100%;
   margin: 0;
   font-size: 1vh;
+  font-weight: bold;
   overflow-y: auto;
   overflow-x: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid gold;
+  border: 1px solid gold;
+}
+
+html{
+  margin:0;
+  padding: 0;
 }
 
 footer {
@@ -110,9 +116,9 @@ p {
 }
 
 hr {
-  border-top: 1px solid #D5ECEC;
+  border-top: 2px solid black;
   width: 100%;
-  margin: auto;
+  margin: 0;
 }
 
 #like_button_container {
@@ -424,11 +430,9 @@ iframe {
   overflow-x: auto;
   flex: 1;
   flex-wrap: wrap;
-  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightblue;
 }
 
 .link-container {
@@ -442,6 +446,8 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0px;
+  padding: 0px;
   background-image: linear-gradient(#eaeef0 0%, #A9A9A9 100%);
   border: 2px solid black;
 }
@@ -477,11 +483,11 @@ iframe {
   display: flex;
   flex: 1;
   overflow: hidden;
-  background-color: green;
   /* #333 */
   width: 100%;
   z-index: 1;
   margin: auto;
+  justify-content: center;
   /* this makes the sticky postition not get overlapped by something like flip tiles */
 }
 
@@ -506,6 +512,8 @@ iframe {
   /* #4CAF50 */
   color: black;
 }
+
+
 
 /* flip cards */
 .flip-card {
