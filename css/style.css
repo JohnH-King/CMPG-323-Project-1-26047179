@@ -632,6 +632,9 @@ iframe {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  padding:10px;border: 1px solid #eee;
+  box-shadow:  0 2px 3px #ccc;
+  background-color: #ccc;
 }
 
 #growit:hover{
