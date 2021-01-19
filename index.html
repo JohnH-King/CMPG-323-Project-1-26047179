@@ -343,31 +343,31 @@
 
 
 
-  <hr>
-  <div class="row form-group" style="padding:0px ;margin: 0px; background-color: #adbec5">
 
-    <form action="https://mongodb-cv26047179.herokuapp.com/CV" method="post" id="default" target="_blank" onsubmit="Formvalidation()" class="col-12 col-lg-7" style="background-color:  #adbec5; padding:0px ;margin: auto" style="
-    border: 2px solid black;">
+  <div class="row form-group" style="padding:0px ;margin: 0px; background-color: #adbec5">
+    <form action="https://mongodb-cv26047179.herokuapp.com/CV" method="post" id="default" target="_blank" onsubmit="Formvalidation()" class="col-12 col-lg-7" style="background-color:  #adbec5; padding:0px ;margin: auto;
+    border: 2px solid black; height: 100%">
 
       <!-- hiddenFrame: put this in target when/if you don't want json confirmation, A script can be written for an alert, but I pref this output for an assignment <iframe name="hiddenFrame" class="hide"></iframe>-->
+      <br>
+      <h2  class="text font-weight-bolder">NodeJS Express REST</h2><br>
+      <b>Name:</b> <input class="input-group col-4" type="text" name="name" id="name"><br>
+      <b>Email:</b> <input class="input-group col-4" type="email" name="email" id="email"><br>
+      <b>Comments:</b> <br><textarea class="input-group col-7" name="comments" id="comments" cols="1000" rows="4" placeholder="Questions?"></textarea><br> <!-- width does not load out of css with the initial call -->
 
-      <h2  class="text font-weight-bolder">NodeJS Express REST</h2>
-      <b>Name:</b> <input type="text" name="name" id="name"><br>
-      <b>Email:</b> <input type="email" name="email" id="email"><br>
-      <b>Comments:</b> <br><textarea name="comments" id="comments" cols="1000" rows="4" placeholder="Questions?"></textarea><br> <!-- width does not load out of css with the initial call -->
 
-      <div class="row form-group">
-        <button class="btn btn-success" type="submit" name="Submit" value="Submit"><b>Submit</b></button><br>
-        <button class="btn btn-warning" type="reset" name="button"><b>Reset</b></button><br>
-      </div>
+        <button class="btn btn-success col-6 form-control" type="submit" name="Submit" value="Submit"><b>Submit</b></button><br>
+
+        <button class="btn btn-warning col-6 form-control" type="reset" name="button"><b>Reset</b></button><br>
+
       <!-- Upload resume: <input type="file" name="" value="" accept="pdf"> -->
     </form>
 
 
-    <div class="col-lg-5 col-sm-12 offset-1" style="padding:0px ;margin: 0px" style="padding:0px ;margin: 0px">
+    <div class="col-lg-5 col-sm-12" style="padding:0px ;margin: 0px">
 
       <hr>
-      <div class="link-container">
+      <div class="link-container" style="height: 100%">
         <a name="contact"></a>
         <h2 class="text font-weight-bolder">Contact Details</h2><br>
         <p>Cell number: 079-460-2235</p>

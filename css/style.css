@@ -447,6 +447,7 @@ iframe {
   align-items: center;
   margin: 0px;
   padding: 0px;
+  padding-top: 5px;
   background-image: linear-gradient(#eaeef0 0%, #A9A9A9 100%);
   border: 2px solid black;
 }
