@@ -93,26 +93,36 @@ p {
   font-size: 2vh;
   padding: 10px;
   margin: 10px;
+  font-weight: normal;
 }
 
 .h1 {
   justify-content: center;
   align-items: center;
   font-size: 2vh;
+  margin: auto;
+  font-weight: bold;
 }
 
 .h2 {
   font-size: 2vh;
   padding: 10px;
+  margin: auto;
+  font-weight: bold;
 }
 
 .h3 {
   font-size: 2vh;
   padding: 10px;
+  margin: auto;
+  font-weight: bold;
 }
 
 .h4 {
   font-size: 2vh;
+  padding: 10px;
+  margin: auto;
+  font-weight: bold;
 }
 
 hr {
