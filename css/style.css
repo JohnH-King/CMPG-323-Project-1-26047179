@@ -692,9 +692,9 @@ video {
 	height: 200px;
   width:100%;
   border: 1px solid black;
-  box-shadow: 0 5px 5px 10px black;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  box-shadow: 0 5px 0 10px #000010;
+  margin-top: 7px;
+  margin-bottom: 15px;
 
 	svg {
 		max-width: 45rem;
