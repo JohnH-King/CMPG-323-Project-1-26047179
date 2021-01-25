@@ -161,6 +161,9 @@ hr {
   animation-timing-function: ease;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  width: 75%;
+  margin: auto;
+  padding: 5px;
 }
 
 #default {
@@ -297,7 +300,6 @@ textarea {
   display: flex;
   overflow-x: auto;
   flex: 1;
-  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -311,7 +313,6 @@ textarea {
 }
 
 iframe {
-  padding: 10px;
   border-radius: 5px 5px 0 0;
 }
 
@@ -592,7 +593,13 @@ iframe {
   perspective: 1000px;
   margin: 0 15px 30px;
 }
-
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
 .game-card-inner {
   position: relative;
   width: 100%;
@@ -673,4 +680,57 @@ iframe {
   display: block;
   font-size: 1rem;
   font-weight: bolder;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+.containerc {
+	background-color: #960905;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+  width:100%;
+  border: 1px solid black;
+  box-shadow: 0 5px 5px 10px black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+	svg {
+		max-width: 45rem;
+		width: 100%;
+		height: auto;
+		fill: none;
+		stroke: white;
+		stroke-width: 8;
+
+		tspan > tspan {
+			stroke-dasharray: 1500;
+			stroke-dashoffset: -1500;
+
+			@for $i from 1 through 15 {
+
+				&:nth-of-type(#{$i}) {
+					animation: draw 300ms #{$i * 150}ms forwards;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+@keyframes draw {
+
+	100% {
+		stroke-dashoffset: 0;
+	}
+
+}
+
+#CText{
+  margin: 0px;
+  padding: 0px;
 }

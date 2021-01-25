@@ -36,9 +36,8 @@
     <!--embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://johnh-king.github.io/CMPG-323-Project-1-26047179/img/John_King_CV.pdf" width="500" height="375"-->
   </div> <!-- line spacing -->
 
-
-  <div class="row" style="margin: 0">
-    <div class="col-lg-4 col-sm-12" style="margin: auto; margin-left: 0px">
+  <div class="row"><a name="about"></a>
+    <div class="col-lg-4 col-sm-12" style="margin: auto; margin-left: 0px;">
       <img src="img/1C.jpg" alt="" style="width: 100%; height: 70vh;     float: left;" />
     </div>
     <div class="col-lg-7 col-sm-12 offset-1 pt-5">
@@ -51,7 +50,7 @@
           </div>
           <br /><br /><br />
         </div>
-        <h1  class="text-info font-weight-bolder"><a name="about">About me<br></a></h1>
+        <h1  class="text-info font-weight-bolder">About me<br></h1>
         <span>
           <p style=" margin-right: 40px">I am John King and I was born in 1996. I am eager to see what I can do.<br>
             I graduated from High School in 2014. I enrolled in the NWU University in 2015. I used to play Chess for Sedibeng. My objective is:<br><br>
@@ -68,11 +67,39 @@
   <!--<div class="HalfRating"></div>  DOM container-->
   <hr>
 
+  <div class="containerc">
 
+  	<svg viewBox="0 0 1418 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  		<title>@WebDesignerMag</title>
+  		<g stroke="23px" fill="none" fill-rule="evenodd" fill-opacity="0">
+  			<text id="@WebDesignerMag" stroke="#fff" fill="#645F5A" font-weight="normal" font-family="PermanentMarker-Regular, Permanent Marker" font-size="144">
+  				<tspan x="20" y="109"><!--
+            --><tspan>N</tspan><!--
+  					--><tspan>W</tspan><!--
+  					--><tspan>U</tspan><!--
+  					--><tspan>&nbsp;</tspan><!--
+            --><tspan>I</tspan><!--
+            --><tspan>T</tspan><!--
+            --><tspan>&nbsp;</tspan><!--
+  					--><tspan>G</tspan><!--
+  					--><tspan>r</tspan><!--
+  					--><tspan>a</tspan><!--
+  					--><tspan>d</tspan><!--
+  					--><tspan>u</tspan><!--
+  					--><tspan>a</tspan><!--
+  					--><tspan>t</tspan><!--
+  					--><tspan>e</tspan><!--
+  				--></tspan>
+  			</text>
+  		</g>
+  	</svg>
+
+  </div>
   <div class="flex-container4">
     <h1 class="text font-weight-bolder" style="align-content: center; "><a  name="skills">
+      <br/>
     </a><b>Skills</b></h1>
-    <br>
+    <br/>
     <fieldset style="padding-bottom: 20px">
 
       <!--a href="https://www.udemy.com/course/html5-css3-the-right-parts-complete-beginners-course/" style="color: black; padding:30px"> This page was built with the knowledge acquired because of a great free Udemy course taught by Coding Bee</a-->
@@ -207,11 +234,7 @@
             <img id="growit" src="img/Spice.png" alt="" />
           </div>
         </div>
-
-
-
-
-      </div>
+        </div>
     </fieldset>
     <br>
     <br>
@@ -274,8 +297,9 @@
           <hr />
         </div>
         <br />
+
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="flex-container-grid1">
               <div class="card-container" style="margin:15%;">
                 <div class="flip-card">
@@ -317,7 +341,7 @@
           </div>
 
 
-          <div class="col-lg-6 col-sm-12" style="margin: auto">
+          <div class=" col-lg-6 col-md-12 col-sm-12 mb-3 mt-3" >
             <div class="card" id="one">
 
               <iframe style="width:95%; height:400px; min-height:60%;" src="https://www.youtube.com/embed/WDrU305J1yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -345,7 +369,7 @@
 
 
   <div class="row form-group" style="padding:0px ;margin: 0px; background-color: #adbec5">
-    <form action="https://mongodb-cv26047179.herokuapp.com/CV" method="post" id="default" target="_blank" onsubmit="Formvalidation()" class="col-12 col-lg-7" style="background-color:  #adbec5; padding:0px ;margin: auto;
+    <form action="https://mongodb-cv26047179.herokuapp.com/CV" method="post" id="default" target="_blank" onsubmit="Formvalidation()" class="col-12 col-lg-7" style="background-image: linear-gradient(#eaeef0 0%, #A9A9A9 100%); padding:0px ;margin: auto;
     border: 2px solid black; height: 100%">
 
       <!-- hiddenFrame: put this in target when/if you don't want json confirmation, A script can be written for an alert, but I pref this output for an assignment <iframe name="hiddenFrame" class="hide"></iframe>-->
@@ -365,13 +389,13 @@
 
 
     <div class="col-lg-5 col-sm-12" style="padding:0px ;margin: 0px">
-
-      <hr>
       <div class="link-container" style="height: 100%">
         <a name="contact"></a>
-        <h2 class="text font-weight-bolder">Contact Details</h2><br>
-        <p>Cell number: 079-460-2235</p>
-        <p>Email: Johnk858@ymail.com</p><br />
+        <h2 class="text font-weight-bolder">Contact Details</h2>
+        <br/>
+        <p id="CText">Cell number: 079-460-2235</p>
+        <p id="CText">Email: Johnk858@ymail.com</p>
+        <br/>
         <!--a href="https://project226047179202011.azurewebsites.net/"> Here is my most recent ASP.NET MVC Core application hosted on Azure</a-->
         <span><i class="fab fa-youtube"></i><a href="https://www.youtube.com/channel/UCGIxYZJn7FyH8_6tBYxrlZw?view_as=subscriber"> My YouTube channel explaining this CV and more</a></span><br />
         <a class="fa fa-facebook-square" href="https://facebook.com/JohnHKing858"> Find me on Facebook</a>
@@ -381,7 +405,6 @@
         <br />
         <!--a href="http://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=440&count=3&maxlength=300&format=json">A typical Steam JSON file</a-->
         <p style="font-size:0.85rem;"><span style="font-weight: bolder">&#169; Copyright 2021 - All Rights Reserved</span></p>
-        <br />
       </div>
     </div>
   </div>
